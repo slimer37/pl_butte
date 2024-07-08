@@ -5,6 +5,9 @@
 *.bsp
 *.prt
 
+# Autosaves
+*.vmx
+
 # Point files
 *.pts
 *.lin
