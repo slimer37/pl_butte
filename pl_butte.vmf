@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "28"
+	"mapversion" "32"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "28"
+	"mapversion" "32"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -337,13 +337,13 @@ world
 		side
 		{
 			"id" "48"
-			"plane" "(-3328 3328 2304) (3328 3328 2304) (3328 -3328 2304)"
+			"plane" "(-3328 3328 2208) (3328 3328 2208) (3328 -3328 2208)"
 			vertices_plus
 			{
-				"v" "-3328 3328 2304"
-				"v" "3328 3328 2304"
-				"v" "3328 -3328 2304"
-				"v" "-3328 -3328 2304"
+				"v" "-3328 3328 2208"
+				"v" "3328 3328 2208"
+				"v" "3328 -3328 2208"
+				"v" "-3328 -3328 2208"
 			}
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -355,13 +355,13 @@ world
 		side
 		{
 			"id" "47"
-			"plane" "(-3328 -3328 2048) (3328 -3328 2048) (3328 3328 2048)"
+			"plane" "(-3328 -3328 1952) (3328 -3328 1952) (3328 3328 1952)"
 			vertices_plus
 			{
-				"v" "-3328 -3328 2048"
-				"v" "3328 -3328 2048"
-				"v" "3328 3328 2048"
-				"v" "-3328 3328 2048"
+				"v" "-3328 -3328 1952"
+				"v" "3328 -3328 1952"
+				"v" "3328 3328 1952"
+				"v" "-3328 3328 1952"
 			}
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -373,17 +373,17 @@ world
 		side
 		{
 			"id" "46"
-			"plane" "(-3328 3328 2304) (-3328 -3328 2304) (-3328 -3328 2048)"
+			"plane" "(-3328 3328 2208) (-3328 -3328 2208) (-3328 -3328 1952)"
 			vertices_plus
 			{
-				"v" "-3328 3328 2304"
-				"v" "-3328 -3328 2304"
-				"v" "-3328 -3328 2048"
-				"v" "-3328 3328 2048"
+				"v" "-3328 3328 2208"
+				"v" "-3328 -3328 2208"
+				"v" "-3328 -3328 1952"
+				"v" "-3328 3328 1952"
 			}
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 -0] 0.25"
-			"vaxis" "[0 0 -1 -0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -391,17 +391,17 @@ world
 		side
 		{
 			"id" "45"
-			"plane" "(3328 3328 2048) (3328 -3328 2048) (3328 -3328 2304)"
+			"plane" "(3328 3328 1952) (3328 -3328 1952) (3328 -3328 2208)"
 			vertices_plus
 			{
-				"v" "3328 3328 2048"
-				"v" "3328 -3328 2048"
-				"v" "3328 -3328 2304"
-				"v" "3328 3328 2304"
+				"v" "3328 3328 1952"
+				"v" "3328 -3328 1952"
+				"v" "3328 -3328 2208"
+				"v" "3328 3328 2208"
 			}
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[0 1 0 -0] 0.25"
-			"vaxis" "[0 0 -1 -0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -409,17 +409,17 @@ world
 		side
 		{
 			"id" "44"
-			"plane" "(3328 3328 2304) (-3328 3328 2304) (-3328 3328 2048)"
+			"plane" "(3328 3328 2208) (-3328 3328 2208) (-3328 3328 1952)"
 			vertices_plus
 			{
-				"v" "3328 3328 2304"
-				"v" "-3328 3328 2304"
-				"v" "-3328 3328 2048"
-				"v" "3328 3328 2048"
+				"v" "3328 3328 2208"
+				"v" "-3328 3328 2208"
+				"v" "-3328 3328 1952"
+				"v" "3328 3328 1952"
 			}
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 -0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -427,17 +427,17 @@ world
 		side
 		{
 			"id" "43"
-			"plane" "(3328 -3328 2048) (-3328 -3328 2048) (-3328 -3328 2304)"
+			"plane" "(3328 -3328 1952) (-3328 -3328 1952) (-3328 -3328 2208)"
 			vertices_plus
 			{
-				"v" "3328 -3328 2048"
-				"v" "-3328 -3328 2048"
-				"v" "-3328 -3328 2304"
-				"v" "3328 -3328 2304"
+				"v" "3328 -3328 1952"
+				"v" "-3328 -3328 1952"
+				"v" "-3328 -3328 2208"
+				"v" "3328 -3328 2208"
 			}
 			"material" "TOOLS/TOOLSSKYBOX"
 			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 -0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -1853,6 +1853,16 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	group
+	{
+		"id" "696"
+		editor
+		{
+			"color" "220 220 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 }
 entity
 {
@@ -2166,6 +2176,38 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 7500]"
+	}
+}
+entity
+{
+	"id" "697"
+	"classname" "filter_activator_tfteam"
+	"targetname" "filter_red"
+	"TeamNum" "2"
+	"origin" "800 -2112 320"
+	editor
+	{
+		"color" "220 220 220"
+		"groupid" "696"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "699"
+	"classname" "filter_activator_tfteam"
+	"targetname" "filter_blu"
+	"TeamNum" "3"
+	"origin" "816 -2112 320"
+	editor
+	{
+		"color" "220 220 220"
+		"groupid" "696"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
 	}
 }
 cameras
