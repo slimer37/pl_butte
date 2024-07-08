@@ -3,3 +3,8 @@
 
 # Map builds
 *.bsp
+*.prt
+
+# Point files
+*.pts
+*.lin
