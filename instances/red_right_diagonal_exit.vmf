@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "2"
+	"mapversion" "3"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "2"
+	"mapversion" "3"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites_2fort"
 	"detailvbsp" "detail_2fort.vbsp"
@@ -899,8 +899,8 @@ entity
 				"v" "84.969 -2.81305 128"
 			}
 			"material" "OVERLAYS/NO_ENTRY"
-			"uaxis" "[1 0 0 101.66] 0.5"
-			"vaxis" "[0 0 -1 -58] 0.5"
+			"uaxis" "[1 0 0 134.062] 0.5"
+			"vaxis" "[0 0 -1 -11] 0.5"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"

@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "37"
+	"mapversion" "38"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "37"
+	"mapversion" "38"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -4735,6 +4735,7 @@ entity
 	"classname" "func_instance"
 	"angles" "-0 -45 0"
 	"file" "instances/red_left_diagonal_exit.vmf"
+	"fixup_style" "2"
 	"origin" "772 772 64"
 	editor
 	{
@@ -6525,6 +6526,7 @@ entity
 	"classname" "func_instance"
 	"angles" "-0 -45 0"
 	"file" "instances/red_right_diagonal_exit"
+	"fixup_style" "2"
 	"origin" "-584 669.436 64"
 	editor
 	{
