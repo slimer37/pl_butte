@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "38"
+	"mapversion" "39"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "38"
+	"mapversion" "39"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -4293,7 +4293,7 @@ entity
 	"solid" "6"
 	"spawnflags" "0"
 	"StartDisabled" "0"
-	"targetname" "prop_locker_red_1"
+	"targetname" "prop_locker_red_2"
 	"origin" "-344.63 1005.26 64.1601"
 	editor
 	{
@@ -4308,7 +4308,7 @@ entity
 {
 	"id" "2198"
 	"classname" "func_regenerate"
-	"associatedmodel" "prop_locker_red_1"
+	"associatedmodel" "prop_locker_red_2"
 	"StartDisabled" "0"
 	"TeamNum" "2"
 	solid
