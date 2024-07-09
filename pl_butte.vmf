@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "48"
+	"mapversion" "52"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "48"
+	"mapversion" "52"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -2169,6 +2169,244 @@ entity
 }
 entity
 {
+	"id" "851"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_cp_one2"
+	"targetname" "sspl_path_cp_one1"
+	"origin" "784 -1376 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect the end of your first track section here."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "847"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_1"
+	"targetname" "sspl_path_start"
+	connections
+	{
+		"OnPass" "sspl_cartsparksStopSpark0-1"
+	}
+	"origin" "480 -1376 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "843"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"disableshadows" "1"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_trainyard/track_midcap.mdl"
+	"modelscale" "1.0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "0"
+	"targetname" "cp_one_prop"
+	"origin" "864 -1376 256"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 8000]"
+	}
+}
+entity
+{
+	"id" "841"
+	"classname" "team_train_watcher"
+	"env_spark_name" "sspl_cartsparks"
+	"goal_node" "sspl_path_end"
+	"handle_train_movement" "1"
+	"hud_min_speed_level_1" "1"
+	"hud_min_speed_level_2" "60"
+	"hud_min_speed_level_3" "80"
+	"linked_cp_1" "cp_one"
+	"linked_cp_2" "cp_two"
+	"linked_cp_3" "cp_three"
+	"linked_cp_4" "cp_four"
+	"linked_pathtrack_1" "sspl_path_cp_one3"
+	"linked_pathtrack_2" "sspl_path_cp_two3"
+	"linked_pathtrack_3" "sspl_path_cp_three3"
+	"linked_pathtrack_4" "sspl_path_end"
+	"speed_forward_modifier" "1"
+	"start_node" "sspl_path_start"
+	"targetname" "sspl_watcher"
+	"train" "sspl_train"
+	"train_can_recede" "1"
+	"origin" "480 -1248 368"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7500]"
+	}
+}
+entity
+{
+	"id" "839"
+	"classname" "game_round_win"
+	"force_map_reset" "1"
+	"switch_teams" "1"
+	"targetname" "sspl_time_end"
+	"TeamNum" "2"
+	"origin" "480 -1248 336"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -15768]"
+	}
+}
+entity
+{
+	"id" "837"
+	"classname" "team_round_timer"
+	"auto_countdown" "1"
+	"max_length" "600"
+	"setup_length" "70"
+	"show_in_hud" "1"
+	"show_time_remaining" "1"
+	"start_paused" "0"
+	"targetname" "sspl_timer"
+	"timer_length" "270"
+	connections
+	{
+		"OnFinished" "sspl_time_endRoundWin0-1"
+		"OnSetupFinished" "blu_first_spawn_door_trigger*Enable0-1"
+	}
+	"origin" "480 -1248 352"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Timer length and increases upon point capture are starting places. Adjust them to your map accordingly."
+		"logicalpos" "[0 -15768]"
+	}
+}
+entity
+{
+	"id" "835"
+	"classname" "team_control_point_master"
+	"cpm_restrict_team_cap_win" "2"
+	"custom_position_x" "-1"
+	"custom_position_y" "-1"
+	"partial_cap_points_rate" "0.1"
+	"score_style" "1"
+	"switch_teams" "1"
+	"team_base_icon_2" "sprites/obj_icons/icon_base_red"
+	"team_base_icon_3" "sprites/obj_icons/icon_base_blu"
+	"origin" "480 -1248 384"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 14500]"
+	}
+}
+entity
+{
+	"id" "833"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamGoalString#Goldrush_blue_final_goal0-1"
+		"OnMultiNewRound" "sspl_gamerulesSetRedTeamGoalString#Goldrush_red_final_goal0-1"
+		"OnMultiNewRound" "sspl_gamerulesSetRedTeamRole10-1"
+		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamRole20-1"
+		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamRespawnWaveTime30-1"
+		"OnMultiNewRound" "sspl_gamerulesSetRedTeamRespawnWaveTime90-1"
+	}
+	"origin" "512 -1248 400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "You only need one logic_auto. If you already have one copy it's outputs here."
+		"logicalpos" "[0 -11768]"
+	}
+}
+entity
+{
+	"id" "831"
+	"classname" "tf_gamerules"
+	"ctf_overtime" "1"
+	"hud_type" "0"
+	"targetname" "sspl_gamerules"
+	"origin" "480 -1248 400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "829"
+	"classname" "team_control_point"
+	"angles" "0 0 0"
+	"point_default_owner" "2"
+	"point_printname" "#Badwater_cap_1"
+	"point_warn_on_cap" "2"
+	"point_warn_sound" "ControlPoint.CaptureWarn"
+	"spawnflags" "12"
+	"targetname" "cp_one"
+	"team_bodygroup_0" "3"
+	"team_bodygroup_2" "1"
+	"team_bodygroup_3" "1"
+	"team_icon_0" "sprites/obj_icons/icon_obj_neutral"
+	"team_icon_2" "sprites/obj_icons/icon_obj_red"
+	"team_icon_3" "sprites/obj_icons/icon_obj_blu"
+	"team_model_0" "models/effects/cappoint_hologram.mdl"
+	"team_model_2" "models/effects/cappoint_hologram.mdl"
+	"team_model_3" "models/effects/cappoint_hologram.mdl"
+	"team_previouspoint_3_0" "cp_one"
+	connections
+	{
+		"OnCapTeam2" "sspl_pushzoneSetControlPointcp_two0.011"
+	}
+	"origin" "864 -1376 264"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 15000]"
+	}
+}
+entity
+{
 	"id" "1289"
 	"classname" "item_ammopack_medium"
 	"angles" "0 0 0"
@@ -2765,18 +3003,17 @@ entity
 }
 entity
 {
-	"id" "40"
+	"id" "2144"
 	"classname" "func_instance"
 	"angles" "-0 0 0"
-	"file" "pl_butte_building.vmf"
-	"fixup_style" "2"
-	"origin" "0 0 256"
+	"file" "instances/blu_spawn"
+	"origin" "48 -1584 256"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 2000]"
+		"logicalpos" "[0 6500]"
 	}
 }
 entity
@@ -3239,240 +3476,18 @@ entity
 }
 entity
 {
-	"id" "829"
-	"classname" "team_control_point"
-	"angles" "0 0 0"
-	"point_default_owner" "2"
-	"point_printname" "#Badwater_cap_1"
-	"point_warn_on_cap" "2"
-	"point_warn_sound" "ControlPoint.CaptureWarn"
-	"spawnflags" "12"
-	"targetname" "cp_one"
-	"team_bodygroup_0" "3"
-	"team_bodygroup_2" "1"
-	"team_bodygroup_3" "1"
-	"team_icon_0" "sprites/obj_icons/icon_obj_neutral"
-	"team_icon_2" "sprites/obj_icons/icon_obj_red"
-	"team_icon_3" "sprites/obj_icons/icon_obj_blu"
-	"team_model_0" "models/effects/cappoint_hologram.mdl"
-	"team_model_2" "models/effects/cappoint_hologram.mdl"
-	"team_model_3" "models/effects/cappoint_hologram.mdl"
-	"team_previouspoint_3_0" "cp_one"
-	connections
-	{
-		"OnCapTeam2" "sspl_pushzoneSetControlPointcp_two0.011"
-	}
-	"origin" "864 -1376 264"
+	"id" "40"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/pl_butte_building.vmf"
+	"fixup_style" "2"
+	"origin" "0 0 256"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 15000]"
-	}
-}
-entity
-{
-	"id" "831"
-	"classname" "tf_gamerules"
-	"ctf_overtime" "1"
-	"hud_type" "0"
-	"targetname" "sspl_gamerules"
-	"origin" "480 -1248 400"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "833"
-	"classname" "logic_auto"
-	"spawnflags" "1"
-	connections
-	{
-		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamGoalString#Goldrush_blue_final_goal0-1"
-		"OnMultiNewRound" "sspl_gamerulesSetRedTeamGoalString#Goldrush_red_final_goal0-1"
-		"OnMultiNewRound" "sspl_gamerulesSetRedTeamRole10-1"
-		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamRole20-1"
-		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamRespawnWaveTime30-1"
-		"OnMultiNewRound" "sspl_gamerulesSetRedTeamRespawnWaveTime90-1"
-	}
-	"origin" "512 -1248 400"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "You only need one logic_auto. If you already have one copy it's outputs here."
-		"logicalpos" "[0 -11768]"
-	}
-}
-entity
-{
-	"id" "835"
-	"classname" "team_control_point_master"
-	"cpm_restrict_team_cap_win" "2"
-	"custom_position_x" "-1"
-	"custom_position_y" "-1"
-	"partial_cap_points_rate" "0.1"
-	"score_style" "1"
-	"switch_teams" "1"
-	"team_base_icon_2" "sprites/obj_icons/icon_base_red"
-	"team_base_icon_3" "sprites/obj_icons/icon_base_blu"
-	"origin" "480 -1248 384"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 14500]"
-	}
-}
-entity
-{
-	"id" "837"
-	"classname" "team_round_timer"
-	"auto_countdown" "1"
-	"max_length" "600"
-	"setup_length" "70"
-	"show_in_hud" "1"
-	"show_time_remaining" "1"
-	"start_paused" "0"
-	"targetname" "sspl_timer"
-	"timer_length" "270"
-	connections
-	{
-		"OnFinished" "sspl_time_endRoundWin0-1"
-		"OnSetupFinished" "blu_first_spawn_door_trigger*Enable0-1"
-	}
-	"origin" "480 -1248 352"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Timer length and increases upon point capture are starting places. Adjust them to your map accordingly."
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "839"
-	"classname" "game_round_win"
-	"force_map_reset" "1"
-	"switch_teams" "1"
-	"targetname" "sspl_time_end"
-	"TeamNum" "2"
-	"origin" "480 -1248 336"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "841"
-	"classname" "team_train_watcher"
-	"env_spark_name" "sspl_cartsparks"
-	"goal_node" "sspl_path_end"
-	"handle_train_movement" "1"
-	"hud_min_speed_level_1" "1"
-	"hud_min_speed_level_2" "60"
-	"hud_min_speed_level_3" "80"
-	"linked_cp_1" "cp_one"
-	"linked_cp_2" "cp_two"
-	"linked_cp_3" "cp_three"
-	"linked_cp_4" "cp_four"
-	"linked_pathtrack_1" "sspl_path_cp_one3"
-	"linked_pathtrack_2" "sspl_path_cp_two3"
-	"linked_pathtrack_3" "sspl_path_cp_three3"
-	"linked_pathtrack_4" "sspl_path_end"
-	"speed_forward_modifier" "1"
-	"start_node" "sspl_path_start"
-	"targetname" "sspl_watcher"
-	"train" "sspl_train"
-	"train_can_recede" "1"
-	"origin" "480 -1248 368"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 7500]"
-	}
-}
-entity
-{
-	"id" "843"
-	"classname" "prop_dynamic"
-	"angles" "0 0 0"
-	"disableshadows" "1"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"MaxAnimTime" "10"
-	"MinAnimTime" "5"
-	"model" "models/props_trainyard/track_midcap.mdl"
-	"modelscale" "1.0"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"skin" "0"
-	"solid" "0"
-	"targetname" "cp_one_prop"
-	"origin" "864 -1376 256"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 8000]"
-	}
-}
-entity
-{
-	"id" "847"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_A_1"
-	"targetname" "sspl_path_start"
-	connections
-	{
-		"OnPass" "sspl_cartsparksStopSpark0-1"
-	}
-	"origin" "480 -1376 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "851"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_cp_one2"
-	"targetname" "sspl_path_cp_one1"
-	"origin" "784 -1376 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect the end of your first track section here."
-		"logicalpos" "[0 1500]"
+		"logicalpos" "[0 2000]"
 	}
 }
 cameras
