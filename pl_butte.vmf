@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "70"
+	"mapversion" "71"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "70"
+	"mapversion" "71"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -2205,9 +2205,9 @@ entity
 	"angles" "0 0 0"
 	"orientationtype" "1"
 	"spawnflags" "0"
-	"target" "sspl_path_cp_one1"
+	"target" "sspl_path_A_3"
 	"targetname" "sspl_path_A_2"
-	"origin" "1536 -1024 304"
+	"origin" "1568 -1296 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -3596,6 +3596,25 @@ entity
 		"visgroupautoshown" "1"
 		"comments" "Connect this to the begining of your second track section, or clone it to make more track."
 		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "3114"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_cp_one1"
+	"targetname" "sspl_path_A_3"
+	"origin" "1728 -672 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
 	}
 }
 cameras
