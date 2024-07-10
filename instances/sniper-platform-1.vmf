@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "1"
+	"mapversion" "6"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "16"
+	"nGridSpacing" "8"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "1"
+	"mapversion" "6"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites_2fort"
 	"detailvbsp" "detail_2fort.vbsp"
@@ -213,12 +213,141 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	solid
+	{
+		"id" "44"
+		side
+		{
+			"id" "18"
+			"plane" "(-142 -24 69) (-72 -24 69) (-72 -94 69)"
+			vertices_plus
+			{
+				"v" "-142 -24 69"
+				"v" "-72 -24 69"
+				"v" "-72 -94 69"
+				"v" "-142 -94 69"
+			}
+			"material" "TOOLS/TOOLSBLOCKBULLETS2"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "17"
+			"plane" "(-142 -94 -2.134) (-72 -94 -2.134) (-72 -24 -2.134)"
+			vertices_plus
+			{
+				"v" "-142 -94 -2.134"
+				"v" "-72 -94 -2.134"
+				"v" "-72 -24 -2.134"
+				"v" "-142 -24 -2.134"
+			}
+			"material" "TOOLS/TOOLSBLOCKBULLETS2"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "16"
+			"plane" "(-142 -24 69) (-142 -94 69) (-142 -94 -2.134)"
+			vertices_plus
+			{
+				"v" "-142 -24 69"
+				"v" "-142 -94 69"
+				"v" "-142 -94 -2.134"
+				"v" "-142 -24 -2.134"
+			}
+			"material" "TOOLS/TOOLSBLOCKBULLETS2"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15"
+			"plane" "(-72 -24 -2.134) (-72 -94 -2.134) (-72 -94 69)"
+			vertices_plus
+			{
+				"v" "-72 -24 -2.134"
+				"v" "-72 -94 -2.134"
+				"v" "-72 -94 69"
+				"v" "-72 -24 69"
+			}
+			"material" "TOOLS/TOOLSBLOCKBULLETS2"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "14"
+			"plane" "(-72 -24 69) (-142 -24 69) (-142 -24 -2.134)"
+			vertices_plus
+			{
+				"v" "-72 -24 69"
+				"v" "-142 -24 69"
+				"v" "-142 -24 -2.134"
+				"v" "-72 -24 -2.134"
+			}
+			"material" "TOOLS/TOOLSBLOCKBULLETS2"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "13"
+			"plane" "(-72 -94 -2.134) (-142 -94 -2.134) (-142 -94 69)"
+			vertices_plus
+			{
+				"v" "-72 -94 -2.134"
+				"v" "-142 -94 -2.134"
+				"v" "-142 -94 69"
+				"v" "-72 -94 69"
+			}
+			"material" "TOOLS/TOOLSBLOCKBULLETS2"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "224 117 0"
+			"groupid" "78"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "78"
+		editor
+		{
+			"color" "224 117 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 }
 entity
 {
 	"id" "3"
 	"classname" "prop_static"
-	"angles" "0 30 0"
+	"angles" "0 15 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
@@ -226,7 +355,7 @@ entity
 	"model" "models/props_mvm/barrel_crate.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-197 -59 0"
+	"origin" "-192 -56 0"
 	editor
 	{
 		"color" "255 255 0"
@@ -247,10 +376,11 @@ entity
 	"model" "models/props_urban/urban_crate002.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-109 -67 0"
+	"origin" "-109 -59 0"
 	editor
 	{
-		"color" "255 255 0"
+		"color" "224 117 0"
+		"groupid" "78"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 8500]"
@@ -268,7 +398,7 @@ entity
 	"model" "models/props_2fort/miningcrate002.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-37 -91 0"
+	"origin" "-45 -83 0"
 	editor
 	{
 		"color" "255 255 0"
@@ -289,7 +419,7 @@ entity
 	"model" "models/props_forest/milk_crate.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-165 -123 0"
+	"origin" "-165 -115 0"
 	editor
 	{
 		"color" "255 255 0"
