@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "72"
+	"mapversion" "73"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "72"
+	"mapversion" "73"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -2169,6 +2169,309 @@ entity
 }
 entity
 {
+	"id" "3548"
+	"classname" "func_instance"
+	"angles" "0 0 0"
+	"file" "instances/area_bridge"
+	"origin" "0 1888 488"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "939"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "Cart.Trigger"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "sspl_cartbeep"
+	"origin" "-80 0 272"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "1016"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "Hud.EndRoundScored"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "sspl_capturebell"
+	"origin" "464 -1248 384"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "944"
+	"classname" "env_shake"
+	"amplitude" "16"
+	"duration" "1"
+	"frequency" "150"
+	"radius" "500"
+	"spawnflags" "5"
+	"targetname" "sspl_shake"
+	"origin" "-96 0 240"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "947"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "Cart.Explode"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "49"
+	"targetname" "sspl_cartboom"
+	"origin" "-80 0 240"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 5000]"
+	}
+}
+entity
+{
+	"id" "950"
+	"classname" "info_particle_system"
+	"angles" "-90 0 0"
+	"effect_name" "cinefx_goldrush"
+	"targetname" "sspl_boom"
+	"origin" "-32 0 240"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "2144"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/blu_spawn"
+	"fixup_style" "2"
+	"origin" "48 -1584 256"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 6500]"
+	}
+}
+entity
+{
+	"id" "221"
+	"classname" "trigger_hurt"
+	"damage" "10000"
+	"damagecap" "20"
+	"damagemodel" "0"
+	"damagetype" "32"
+	"nodmgforce" "0"
+	"origin" "0 0 -480"
+	"spawnflags" "1"
+	"StartDisabled" "0"
+	solid
+	{
+		"id" "214"
+		side
+		{
+			"id" "96"
+			"plane" "(-3328 3328 -192) (3328 3328 -192) (3328 -3328 -192)"
+			vertices_plus
+			{
+				"v" "-3328 3328 -192"
+				"v" "3328 3328 -192"
+				"v" "3328 -3328 -192"
+				"v" "-3328 -3328 -192"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 -0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "95"
+			"plane" "(-3328 -3328 -768) (3328 -3328 -768) (3328 3328 -768)"
+			vertices_plus
+			{
+				"v" "-3328 -3328 -768"
+				"v" "3328 -3328 -768"
+				"v" "3328 3328 -768"
+				"v" "-3328 3328 -768"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 -0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "94"
+			"plane" "(-3328 3328 -192) (-3328 -3328 -192) (-3328 -3328 -768)"
+			vertices_plus
+			{
+				"v" "-3328 3328 -192"
+				"v" "-3328 -3328 -192"
+				"v" "-3328 -3328 -768"
+				"v" "-3328 3328 -768"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "93"
+			"plane" "(3328 3328 -768) (3328 -3328 -768) (3328 -3328 -192)"
+			vertices_plus
+			{
+				"v" "3328 3328 -768"
+				"v" "3328 -3328 -768"
+				"v" "3328 -3328 -192"
+				"v" "3328 3328 -192"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "92"
+			"plane" "(3328 3328 -192) (-3328 3328 -192) (-3328 3328 -768)"
+			vertices_plus
+			{
+				"v" "3328 3328 -192"
+				"v" "-3328 3328 -192"
+				"v" "-3328 3328 -768"
+				"v" "3328 3328 -768"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "91"
+			"plane" "(3328 -3328 -768) (-3328 -3328 -768) (-3328 -3328 -192)"
+			vertices_plus
+			{
+				"v" "3328 -3328 -768"
+				"v" "-3328 -3328 -768"
+				"v" "-3328 -3328 -192"
+				"v" "3328 -3328 -192"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 8500]"
+	}
+}
+entity
+{
+	"id" "123"
+	"classname" "light_environment"
+	"_ambient" "133 130 153 375"
+	"_ambientHDR" "-1 -1 -1 1"
+	"_AmbientScaleHDR" "1"
+	"_light" "254 226 186 600"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"angles" "0 108 0"
+	"pitch" "-35"
+	"SunSpreadAngle" "5"
+	"origin" "-1600 96 384"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 6500]"
+	}
+}
+entity
+{
+	"id" "885"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"target" "sspl_path_cp_two5"
+	"targetname" "sspl_path_cp_two4"
+	"origin" "-59 1664 308"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
 	"id" "3114"
 	"classname" "path_track"
 	"angles" "0 0 0"
@@ -2261,7 +2564,7 @@ entity
 		"OnPass" "sspl_pushzoneCaptureCurrentCP0-1"
 		"OnPass" "cp_fourSetOwner30.11"
 	}
-	"origin" "0 -128 304"
+	"origin" "0 -128 384"
 	editor
 	{
 		"color" "255 192 0"
@@ -2593,9 +2896,9 @@ entity
 	"angles" "0 0 0"
 	"orientationtype" "1"
 	"spawnflags" "0"
-	"target" "sspl_path_end"
+	"target" "sspl_path_D_3"
 	"targetname" "sspl_path_D_2"
-	"origin" "-1280 -1152 304"
+	"origin" "-1344 -1024 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -3245,6 +3548,7 @@ entity
 	connections
 	{
 		"OnCapTeam2" "sspl_pushzoneSetControlPointcp_four01"
+		"OnCapTeam2" "setupgate_stage3*Open01"
 	}
 	"origin" "-1792 0 264"
 	editor
@@ -3331,304 +3635,58 @@ entity
 }
 entity
 {
-	"id" "885"
+	"id" "3836"
 	"classname" "path_track"
 	"angles" "0 0 0"
 	"orientationtype" "1"
-	"target" "sspl_path_cp_two5"
-	"targetname" "sspl_path_cp_two4"
-	"origin" "-59 1664 308"
+	"spawnflags" "0"
+	"target" "sspl_path_D_4"
+	"targetname" "sspl_path_D_3"
+	"origin" "-1152 -1088 304"
 	editor
 	{
 		"color" "255 192 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
 		"logicalpos" "[0 1500]"
 	}
 }
 entity
 {
-	"id" "123"
-	"classname" "light_environment"
-	"_ambient" "133 130 153 375"
-	"_ambientHDR" "-1 -1 -1 1"
-	"_AmbientScaleHDR" "1"
-	"_light" "254 226 186 600"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
-	"angles" "0 108 0"
-	"pitch" "-35"
-	"SunSpreadAngle" "5"
-	"origin" "-1600 96 384"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 6500]"
-	}
-}
-entity
-{
-	"id" "221"
-	"classname" "trigger_hurt"
-	"damage" "10000"
-	"damagecap" "20"
-	"damagemodel" "0"
-	"damagetype" "32"
-	"nodmgforce" "0"
-	"origin" "0 0 -480"
-	"spawnflags" "1"
-	"StartDisabled" "0"
-	solid
-	{
-		"id" "214"
-		side
-		{
-			"id" "96"
-			"plane" "(-3328 3328 -192) (3328 3328 -192) (3328 -3328 -192)"
-			vertices_plus
-			{
-				"v" "-3328 3328 -192"
-				"v" "3328 3328 -192"
-				"v" "3328 -3328 -192"
-				"v" "-3328 -3328 -192"
-			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 -0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "95"
-			"plane" "(-3328 -3328 -768) (3328 -3328 -768) (3328 3328 -768)"
-			vertices_plus
-			{
-				"v" "-3328 -3328 -768"
-				"v" "3328 -3328 -768"
-				"v" "3328 3328 -768"
-				"v" "-3328 3328 -768"
-			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 -0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "94"
-			"plane" "(-3328 3328 -192) (-3328 -3328 -192) (-3328 -3328 -768)"
-			vertices_plus
-			{
-				"v" "-3328 3328 -192"
-				"v" "-3328 -3328 -192"
-				"v" "-3328 -3328 -768"
-				"v" "-3328 3328 -768"
-			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "93"
-			"plane" "(3328 3328 -768) (3328 -3328 -768) (3328 -3328 -192)"
-			vertices_plus
-			{
-				"v" "3328 3328 -768"
-				"v" "3328 -3328 -768"
-				"v" "3328 -3328 -192"
-				"v" "3328 3328 -192"
-			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "92"
-			"plane" "(3328 3328 -192) (-3328 3328 -192) (-3328 3328 -768)"
-			vertices_plus
-			{
-				"v" "3328 3328 -192"
-				"v" "-3328 3328 -192"
-				"v" "-3328 3328 -768"
-				"v" "3328 3328 -768"
-			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "91"
-			"plane" "(3328 -3328 -768) (-3328 -3328 -768) (-3328 -3328 -192)"
-			vertices_plus
-			{
-				"v" "3328 -3328 -768"
-				"v" "-3328 -3328 -768"
-				"v" "-3328 -3328 -192"
-				"v" "3328 -3328 -192"
-			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "220 30 220"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 8500]"
-	}
-}
-entity
-{
-	"id" "2144"
-	"classname" "func_instance"
-	"angles" "-0 0 0"
-	"file" "instances/blu_spawn"
-	"fixup_style" "2"
-	"origin" "48 -1584 256"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 6500]"
-	}
-}
-entity
-{
-	"id" "950"
-	"classname" "info_particle_system"
-	"angles" "-90 0 0"
-	"effect_name" "cinefx_goldrush"
-	"targetname" "sspl_boom"
-	"origin" "-32 0 240"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "947"
-	"classname" "ambient_generic"
-	"health" "10"
-	"message" "Cart.Explode"
-	"pitch" "100"
-	"pitchstart" "100"
-	"radius" "1250"
-	"spawnflags" "49"
-	"targetname" "sspl_cartboom"
-	"origin" "-80 0 240"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 5000]"
-	}
-}
-entity
-{
-	"id" "944"
-	"classname" "env_shake"
-	"amplitude" "16"
-	"duration" "1"
-	"frequency" "150"
-	"radius" "500"
-	"spawnflags" "5"
-	"targetname" "sspl_shake"
-	"origin" "-96 0 240"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "1016"
-	"classname" "ambient_generic"
-	"health" "10"
-	"message" "Hud.EndRoundScored"
-	"pitch" "100"
-	"pitchstart" "100"
-	"radius" "1250"
-	"spawnflags" "49"
-	"targetname" "sspl_capturebell"
-	"origin" "464 -1248 384"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 5000]"
-	}
-}
-entity
-{
-	"id" "939"
-	"classname" "ambient_generic"
-	"health" "10"
-	"message" "Cart.Trigger"
-	"pitch" "100"
-	"pitchstart" "100"
-	"radius" "1250"
-	"spawnflags" "49"
-	"targetname" "sspl_cartbeep"
-	"origin" "-80 0 272"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 5000]"
-	}
-}
-entity
-{
-	"id" "3548"
-	"classname" "func_instance"
+	"id" "3844"
+	"classname" "path_track"
 	"angles" "0 0 0"
-	"file" "instances/area_bridge"
-	"origin" "0 1888 488"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_D_5"
+	"targetname" "sspl_path_D_4"
+	"origin" "-896 -896 304"
 	editor
 	{
-		"color" "220 30 220"
+		"color" "255 192 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "3848"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_end"
+	"targetname" "sspl_path_D_5"
+	"origin" "-768 -768 368"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
 		"logicalpos" "[0 1500]"
 	}
 }
