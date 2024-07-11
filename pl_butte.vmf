@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "85"
+	"mapversion" "86"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "32"
+	"nGridSpacing" "8"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "85"
+	"mapversion" "86"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -4388,20 +4388,18 @@ entity
 }
 entity
 {
-	"id" "1289"
-	"classname" "item_ammopack_medium"
-	"angles" "0 0 0"
-	"AutoMaterialize" "1"
-	"fademindist" "-1"
-	"StartDisabled" "0"
-	"TeamNum" "0"
-	"origin" "832 -864 264"
+	"id" "5490"
+	"classname" "func_instance"
+	"angles" "-0 30 0"
+	"file" "instances/blu_spawn_2"
+	"fixup_style" "2"
+	"origin" "-1792 1792 256"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
+		"logicalpos" "[0 3000]"
 	}
 }
 entity
@@ -4446,20 +4444,18 @@ entity
 }
 entity
 {
-	"id" "1278"
-	"classname" "item_healthkit_medium"
-	"angles" "0 0 0"
-	"AutoMaterialize" "1"
-	"fademindist" "-1"
-	"StartDisabled" "0"
-	"TeamNum" "0"
-	"origin" "864 -832 264"
+	"id" "5552"
+	"classname" "func_instance"
+	"angles" "-0 -45 0"
+	"file" "instances/building_ext_blu_first.vmf"
+	"fixup_style" "2"
+	"origin" "800 -824 376"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
+		"logicalpos" "[0 3500]"
 	}
 }
 entity
@@ -4753,22 +4749,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 15000]"
-	}
-}
-entity
-{
-	"id" "5490"
-	"classname" "func_instance"
-	"angles" "-0 30 0"
-	"file" "instances/blu_spawn_2"
-	"fixup_style" "2"
-	"origin" "-1792 1792 256"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3000]"
 	}
 }
 cameras
