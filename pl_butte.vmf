@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "86"
+	"mapversion" "87"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "86"
+	"mapversion" "87"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -3163,6 +3163,8 @@ entity
 	connections
 	{
 		"OnCapTeam2" "sspl_pushzoneSetControlPointcp_two0.011"
+		"OnCapTeam2" "red_exit_aDisable0-1"
+		"OnCapTeam2" "red_exit_a_blockEnable0-1"
 	}
 	"origin" "1792 0 264"
 	editor
