@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "3"
+	"mapversion" "4"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "3"
+	"mapversion" "4"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites_2fort"
 	"detailvbsp" "detail_2fort.vbsp"
@@ -105,11 +105,11 @@ world
 			vertices_plus
 			{
 				"v" "-264 24.1334 320"
-				"v" "231.998 24.1362 320"
+				"v" "232 24.1362 320"
 				"v" "232 -2.81311 320"
 				"v" "-264 -2.81305 320"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -122,12 +122,12 @@ world
 			"plane" "(231.998 24.1362 128) (231.998 24.1362 320) (-264 24.1334 320)"
 			vertices_plus
 			{
-				"v" "231.998 24.1362 128"
-				"v" "231.998 24.1362 320"
+				"v" "232 24.1362 128"
+				"v" "232 24.1362 320"
 				"v" "-264 24.1334 320"
 				"v" "-264 24.1334 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -145,7 +145,7 @@ world
 				"v" "232 -2.81311 320"
 				"v" "232 -2.81311 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -160,10 +160,10 @@ world
 			{
 				"v" "232 -2.81311 128"
 				"v" "232 -2.81311 320"
-				"v" "231.998 24.1362 320"
-				"v" "231.998 24.1362 128"
+				"v" "232 24.1362 320"
+				"v" "232 24.1362 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -181,7 +181,7 @@ world
 				"v" "-264 -2.81305 320"
 				"v" "-264 -2.81305 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -194,12 +194,12 @@ world
 			"plane" "(231.998 24.1362 128) (-264 24.1334 128) (-264 -2.81305 128)"
 			vertices_plus
 			{
-				"v" "231.998 24.1362 128"
+				"v" "232 24.1362 128"
 				"v" "-264 24.1334 128"
 				"v" "-264 -2.81305 128"
 				"v" "232 -2.81311 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -222,12 +222,12 @@ world
 			"plane" "(231.998 24.1362 0) (91.994 24.1398 0) (92 -2.81165 0)"
 			vertices_plus
 			{
-				"v" "231.998 24.1362 0"
-				"v" "91.994 24.1398 0"
+				"v" "232 24.1362 0"
+				"v" "92 24.1398 0"
 				"v" "92 -2.81165 0"
 				"v" "232 -2.81165 0"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -240,12 +240,12 @@ world
 			"plane" "(91.994 24.1398 0) (231.998 24.1362 0) (231.998 24.1362 128)"
 			vertices_plus
 			{
-				"v" "91.994 24.1398 0"
-				"v" "231.998 24.1362 0"
-				"v" "231.998 24.1362 128"
-				"v" "91.994 24.1398 128"
+				"v" "92 24.1398 0"
+				"v" "232 24.1362 0"
+				"v" "232 24.1362 128"
+				"v" "92 24.1398 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -263,7 +263,7 @@ world
 				"v" "92 -2.81305 0"
 				"v" "92 -2.81305 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -276,12 +276,12 @@ world
 			"plane" "(231.998 24.1362 128) (231.998 24.1362 0) (232 -2.81311 0)"
 			vertices_plus
 			{
-				"v" "231.998 24.1362 128"
-				"v" "231.998 24.1362 0"
+				"v" "232 24.1362 128"
+				"v" "232 24.1362 0"
 				"v" "232 -2.81311 0"
 				"v" "232 -2.81311 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -294,12 +294,12 @@ world
 			"plane" "(91.994 24.1398 128) (231.998 24.1362 128) (232 -2.81165 128)"
 			vertices_plus
 			{
-				"v" "91.994 24.1398 128"
-				"v" "231.998 24.1362 128"
+				"v" "92 24.1398 128"
+				"v" "232 24.1362 128"
 				"v" "232 -2.81165 128"
 				"v" "92 -2.81165 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -312,12 +312,12 @@ world
 			"plane" "(92.001 -2.81091 128) (92.001 -2.81091 0) (91.994 24.1398 0)"
 			vertices_plus
 			{
-				"v" "92.001 -2.81091 128"
-				"v" "92.001 -2.81091 0"
-				"v" "91.994 24.1398 0"
-				"v" "91.994 24.1398 128"
+				"v" "92 -2.81091 128"
+				"v" "92 -2.81091 0"
+				"v" "92 24.1398 0"
+				"v" "92 24.1398 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -340,12 +340,12 @@ world
 			"plane" "(-95.9996 24.1334 0) (-264 24.1334 0) (-264 -2.81305 0)"
 			vertices_plus
 			{
-				"v" "-95.9996 24.1334 0"
+				"v" "-96 24.1334 0"
 				"v" "-264 24.1334 0"
 				"v" "-264 -2.81305 0"
-				"v" "-95.9996 -2.81299 0"
+				"v" "-96 -2.81299 0"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -360,10 +360,10 @@ world
 			{
 				"v" "-264 24.1334 128"
 				"v" "-264 24.1334 0"
-				"v" "-95.9996 24.1334 0"
-				"v" "-95.9996 24.1334 128"
+				"v" "-96 24.1334 0"
+				"v" "-96 24.1334 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -376,12 +376,12 @@ world
 			"plane" "(-95.9996 -2.81299 0) (-264 -2.81305 0) (-264 -2.81305 128)"
 			vertices_plus
 			{
-				"v" "-95.9996 -2.81299 0"
+				"v" "-96 -2.81299 0"
 				"v" "-264 -2.81305 0"
 				"v" "-264 -2.81305 128"
-				"v" "-95.9996 -2.81299 128"
+				"v" "-96 -2.81299 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -399,7 +399,7 @@ world
 				"v" "-264 24.1334 0"
 				"v" "-264 24.1334 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -413,11 +413,11 @@ world
 			vertices_plus
 			{
 				"v" "-264 24.1334 128"
-				"v" "-95.9996 24.1334 128"
-				"v" "-95.9996 -2.81299 128"
+				"v" "-96 24.1334 128"
+				"v" "-96 -2.81299 128"
 				"v" "-264 -2.81305 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -430,12 +430,12 @@ world
 			"plane" "(-95.9996 24.1334 128) (-95.9996 24.1334 0) (-95.9996 -2.81299 0)"
 			vertices_plus
 			{
-				"v" "-95.9996 24.1334 128"
-				"v" "-95.9996 24.1334 0"
-				"v" "-95.9996 -2.81299 0"
-				"v" "-95.9996 -2.81299 128"
+				"v" "-96 24.1334 128"
+				"v" "-96 24.1334 0"
+				"v" "-96 -2.81299 0"
+				"v" "-96 -2.81299 128"
 			}
-			"material" "METAL/WALL021"
+			"material" "DEV/DEV_MEASUREWALL01D"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
