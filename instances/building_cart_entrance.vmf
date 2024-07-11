@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "8"
+	"mapversion" "11"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "8"
+	"mapversion" "11"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites_2fort"
 	"detailvbsp" "detail_2fort.vbsp"
@@ -714,7 +714,7 @@ entity
 		"groupid" "147"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"comments" "Use the wildcard target setupgate_stage1_* to fire all stage 1 gates at once. Use setupgate_* to fire all gates. HOLE SIZE: 192x160"
+		"comments" "Use the wildcard target setupgate_stage3_* to fire all stage 3 gates at once. Use setupgate_* to fire all gates. HOLE SIZE: 192x160"
 		"logicalpos" "[0 2500]"
 	}
 }
@@ -752,7 +752,7 @@ entity
 		"groupid" "147"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"comments" "Use the wildcard target setupgate_stage1_* to fire all stage 1 gates at once. Use setupgate_* to fire all gates. HOLE SIZE: 192x160"
+		"comments" "Use the wildcard target setupgate_stage3_* to fire all stage 3 gates at once. Use setupgate_* to fire all gates. HOLE SIZE: 192x160"
 		"logicalpos" "[0 2500]"
 	}
 }
@@ -909,7 +909,7 @@ entity
 		"groupid" "147"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"comments" "Use the wildcard target setupgate_stage1_* to fire all stage 1 gates at once. Use setupgate_* to fire all gates. HOLE SIZE: 192x160"
+		"comments" "Use the wildcard target setupgate_stage3_* to fire all stage 3 gates at once. Use setupgate_* to fire all gates. HOLE SIZE: 192x160"
 		"logicalpos" "[0 500]"
 	}
 }
@@ -1066,7 +1066,7 @@ entity
 		"groupid" "147"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"comments" "Use the wildcard target setupgate_stage1_* to fire all stage 1 gates at once. Use setupgate_* to fire all gates. HOLE SIZE: 192x160"
+		"comments" "Use the wildcard target setupgate_stage3_* to fire all stage 3 gates at once. Use setupgate_* to fire all gates. HOLE SIZE: 192x160"
 		"logicalpos" "[0 500]"
 	}
 }

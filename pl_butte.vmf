@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "75"
+	"mapversion" "76"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "32"
+	"nGridSpacing" "8"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "75"
+	"mapversion" "76"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -2169,6 +2169,225 @@ entity
 }
 entity
 {
+	"id" "3886"
+	"classname" "func_instance"
+	"angles" "-0 -15 0"
+	"file" "instances/area_redsniper.vmf"
+	"fixup_style" "2"
+	"origin" "2059.46 1191.88 256.25"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "3848"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_end"
+	"targetname" "sspl_path_D_5"
+	"origin" "-800 -800 368"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "3844"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_D_5"
+	"targetname" "sspl_path_D_4"
+	"origin" "-928 -928 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "3836"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_D_4"
+	"targetname" "sspl_path_D_3"
+	"origin" "-1152 -1088 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "889"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_C_1"
+	"targetname" "sspl_path_cp_two5"
+	"origin" "-80 1664 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "893"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_cp_two4"
+	"targetname" "sspl_path_cp_two3"
+	connections
+	{
+		"OnPass" "sspl_path_cp_two2DisablePath01"
+		"OnPass" "sspl_pushzoneCaptureCurrentCP01"
+		"OnPass" "cp_two_propSkin101"
+		"OnPass" "sspl_cartsparksStopSpark0-1"
+		"OnPass" "sspl_timerAddTeamTime3 24001"
+		"OnPass" "sspl_capturebellPlaySound01"
+		"OnPass" "cp_twoSetOwner30.11"
+	}
+	"origin" "0 1664 308"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "897"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_cp_three4"
+	"targetname" "sspl_path_cp_three3"
+	connections
+	{
+		"OnPass" "sspl_path_cp_three2DisablePath01"
+		"OnPass" "sspl_pushzoneCaptureCurrentCP01"
+		"OnPass" "cp_three_propSkin101"
+		"OnPass" "sspl_cartsparksStopSpark0-1"
+		"OnPass" "sspl_timerAddTeamTime3 24001"
+		"OnPass" "sspl_capturebellPlaySound01"
+		"OnPass" "cp_threeSetOwner30.11"
+	}
+	"origin" "-1792 0 308"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "901"
+	"classname" "team_control_point"
+	"angles" "0 0 0"
+	"point_default_owner" "2"
+	"point_index" "2"
+	"point_printname" "#Badwater_cap_3"
+	"point_warn_on_cap" "2"
+	"point_warn_sound" "ControlPoint.CaptureWarn"
+	"spawnflags" "12"
+	"targetname" "cp_three"
+	"team_bodygroup_0" "3"
+	"team_bodygroup_2" "1"
+	"team_bodygroup_3" "1"
+	"team_icon_0" "sprites/obj_icons/icon_obj_neutral"
+	"team_icon_2" "sprites/obj_icons/icon_obj_red"
+	"team_icon_3" "sprites/obj_icons/icon_obj_blu"
+	"team_model_0" "models/effects/cappoint_hologram.mdl"
+	"team_model_2" "models/effects/cappoint_hologram.mdl"
+	"team_model_3" "models/effects/cappoint_hologram.mdl"
+	"team_previouspoint_3_0" "cp_two"
+	connections
+	{
+		"OnCapTeam2" "sspl_pushzoneSetControlPointcp_four01"
+		"OnCapTeam2" "setupgate_stage3*Open01"
+	}
+	"origin" "-1792 0 264"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 15000]"
+	}
+}
+entity
+{
+	"id" "903"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"target" "sspl_path_cp_three3"
+	"targetname" "sspl_path_cp_three2"
+	"origin" "-1792 59 308"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "907"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_cp_three2"
+	"targetname" "sspl_path_cp_three1"
+	"origin" "-1792 80 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect the end of your third track section here."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
 	"id" "3548"
 	"classname" "func_instance"
 	"angles" "0 0 0"
@@ -2564,7 +2783,7 @@ entity
 		"OnPass" "sspl_pushzoneCaptureCurrentCP0-1"
 		"OnPass" "cp_fourSetOwner30.11"
 	}
-	"origin" "0 -128 384"
+	"origin" "0 -128 376"
 	editor
 	{
 		"color" "255 192 0"
@@ -3485,225 +3704,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 8000]"
-	}
-}
-entity
-{
-	"id" "907"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_cp_three2"
-	"targetname" "sspl_path_cp_three1"
-	"origin" "-1792 80 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect the end of your third track section here."
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "903"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"target" "sspl_path_cp_three3"
-	"targetname" "sspl_path_cp_three2"
-	"origin" "-1792 59 308"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "901"
-	"classname" "team_control_point"
-	"angles" "0 0 0"
-	"point_default_owner" "2"
-	"point_index" "2"
-	"point_printname" "#Badwater_cap_3"
-	"point_warn_on_cap" "2"
-	"point_warn_sound" "ControlPoint.CaptureWarn"
-	"spawnflags" "12"
-	"targetname" "cp_three"
-	"team_bodygroup_0" "3"
-	"team_bodygroup_2" "1"
-	"team_bodygroup_3" "1"
-	"team_icon_0" "sprites/obj_icons/icon_obj_neutral"
-	"team_icon_2" "sprites/obj_icons/icon_obj_red"
-	"team_icon_3" "sprites/obj_icons/icon_obj_blu"
-	"team_model_0" "models/effects/cappoint_hologram.mdl"
-	"team_model_2" "models/effects/cappoint_hologram.mdl"
-	"team_model_3" "models/effects/cappoint_hologram.mdl"
-	"team_previouspoint_3_0" "cp_two"
-	connections
-	{
-		"OnCapTeam2" "sspl_pushzoneSetControlPointcp_four01"
-		"OnCapTeam2" "setupgate_stage3*Open01"
-	}
-	"origin" "-1792 0 264"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 15000]"
-	}
-}
-entity
-{
-	"id" "897"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_cp_three4"
-	"targetname" "sspl_path_cp_three3"
-	connections
-	{
-		"OnPass" "sspl_path_cp_three2DisablePath01"
-		"OnPass" "sspl_pushzoneCaptureCurrentCP01"
-		"OnPass" "cp_three_propSkin101"
-		"OnPass" "sspl_cartsparksStopSpark0-1"
-		"OnPass" "sspl_timerAddTeamTime3 24001"
-		"OnPass" "sspl_capturebellPlaySound01"
-		"OnPass" "cp_threeSetOwner30.11"
-	}
-	"origin" "-1792 0 308"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "893"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_cp_two4"
-	"targetname" "sspl_path_cp_two3"
-	connections
-	{
-		"OnPass" "sspl_path_cp_two2DisablePath01"
-		"OnPass" "sspl_pushzoneCaptureCurrentCP01"
-		"OnPass" "cp_two_propSkin101"
-		"OnPass" "sspl_cartsparksStopSpark0-1"
-		"OnPass" "sspl_timerAddTeamTime3 24001"
-		"OnPass" "sspl_capturebellPlaySound01"
-		"OnPass" "cp_twoSetOwner30.11"
-	}
-	"origin" "0 1664 308"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "889"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_C_1"
-	"targetname" "sspl_path_cp_two5"
-	"origin" "-80 1664 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "3836"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_D_4"
-	"targetname" "sspl_path_D_3"
-	"origin" "-1152 -1088 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "3844"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_D_5"
-	"targetname" "sspl_path_D_4"
-	"origin" "-896 -896 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "3848"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_end"
-	"targetname" "sspl_path_D_5"
-	"origin" "-768 -768 368"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "3886"
-	"classname" "func_instance"
-	"angles" "-0 -15 0"
-	"file" "instances/area_redsniper.vmf"
-	"fixup_style" "2"
-	"origin" "2059.46 1191.88 256.25"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
 	}
 }
 cameras
