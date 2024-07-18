@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "94"
+	"mapversion" "97"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "94"
+	"mapversion" "97"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -4929,9 +4929,9 @@ entity
 {
 	"id" "6627"
 	"classname" "func_instance"
-	"angles" "0 0 0"
+	"angles" "-0 0 0"
 	"file" "instances/red_arch"
-	"origin" "-1232 208 704"
+	"origin" "-1248 192 256"
 	editor
 	{
 		"color" "220 30 220"
