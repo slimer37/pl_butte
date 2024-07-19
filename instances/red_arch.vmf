@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "29"
+	"mapversion" "30"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "29"
+	"mapversion" "30"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites_2fort"
 	"detailvbsp" "detail_2fort.vbsp"
@@ -3736,7 +3736,7 @@ entity
 	"model" "models/props_trainyard/portable_stairs001.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "208 512 69.3709"
+	"origin" "208 512 65.3709"
 	editor
 	{
 		"color" "255 255 0"
@@ -4106,7 +4106,7 @@ entity
 	"fademindist" "-1"
 	"StartDisabled" "0"
 	"TeamNum" "0"
-	"origin" "-32 176 264"
+	"origin" "-32 176 232"
 	editor
 	{
 		"color" "0 0 200"
@@ -4124,7 +4124,7 @@ entity
 	"fademindist" "-1"
 	"StartDisabled" "0"
 	"TeamNum" "0"
-	"origin" "-32 128 264"
+	"origin" "-32 128 232"
 	editor
 	{
 		"color" "0 0 200"
