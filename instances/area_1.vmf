@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "4"
+	"mapversion" "5"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "4"
+	"mapversion" "5"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites_2fort"
 	"detailvbsp" "detail_2fort.vbsp"
@@ -1362,32 +1362,23 @@ entity
 }
 entity
 {
-	"id" "54"
+	"id" "319"
 	"classname" "prop_static"
-	"angles" "0 196.181 0"
-	"disableselfshadowing" "0"
-	"disableshadows" "0"
-	"disablevertexlighting" "0"
-	"fademaxdist" "0"
+	"angles" "0 300 0"
 	"fademindist" "-1"
 	"fadescale" "1"
-	"generatelightmaps" "0"
-	"ignorenormals" "0"
 	"lightmapresolutionx" "32"
 	"lightmapresolutiony" "32"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/props_coalmines/wood_fence_short_256.mdl"
-	"screenspacefade" "0"
+	"model" "models/props_hydro/water_barrel_cluster.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "656 1192 -92"
+	"origin" "-240.946 -592.728 -216"
 	editor
 	{
 		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 14000]"
+		"logicalpos" "[0 0]"
 	}
 }
 entity
@@ -1513,32 +1504,23 @@ entity
 }
 entity
 {
-	"id" "212"
+	"id" "323"
 	"classname" "prop_static"
-	"angles" "0 181.181 0"
-	"disableselfshadowing" "0"
-	"disableshadows" "0"
-	"disablevertexlighting" "0"
-	"fademaxdist" "0"
+	"angles" "0 255 0"
 	"fademindist" "-1"
 	"fadescale" "1"
-	"generatelightmaps" "0"
-	"ignorenormals" "0"
 	"lightmapresolutionx" "32"
 	"lightmapresolutiony" "32"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/props_coalmines/wood_fence_short_256.mdl"
-	"screenspacefade" "0"
+	"model" "models/props_hydro/water_barrel_cluster.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "896 1256 -92"
+	"origin" "-200 -680 -216"
 	editor
 	{
 		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 14000]"
+		"logicalpos" "[0 0]"
 	}
 }
 entity
@@ -1554,48 +1536,6 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"origin" "-164.736 -548.728 -216"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "319"
-	"classname" "prop_static"
-	"angles" "0 300 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_hydro/water_barrel_cluster.mdl"
-	"skin" "0"
-	"solid" "6"
-	"origin" "-240.946 -592.728 -216"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "323"
-	"classname" "prop_static"
-	"angles" "0 255 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_hydro/water_barrel_cluster.mdl"
-	"skin" "0"
-	"solid" "6"
-	"origin" "-200 -680 -216"
 	editor
 	{
 		"color" "255 255 0"
