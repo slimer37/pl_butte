@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "111"
+	"mapversion" "120"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "64"
+	"nGridSpacing" "32"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "111"
+	"mapversion" "120"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1608,8 +1608,8 @@ world
 				distances
 				{
 					"row0" "0 0 15 13 6.7411"
-					"row1" "5 5 0 15.7464 0"
-					"row2" "0 5 31.3168 0 0"
+					"row1" "5 5 0 5 0"
+					"row2" "0 5 5 0 0"
 					"row3" "0 30.5175 25.5907 0 0"
 					"row4" "0 4.23758 0 0 1.68527"
 				}
@@ -3902,17 +3902,17 @@ world
 				{
 					"row0" "-0.914557 -0.00597781 -0.33727 -0.818581 -0.00451844 -0.574373 -0.911345 0 -0.411643 -0.974586 0 -0.224016 -0.986523 -0.00244523 -0.163602"
 					"row1" "-0.998138 -0.000673344 0.0609987 -1.08251 -0.00121315 0.320663 -0.999201 0 0.0399764 -0.999404 0 -0.0345345 -0.99999 -7.35448e-05 0.00443694"
-					"row2" "-0.959079 0 0.283137 -1.00087 -6.69915e-08 0.482743 -0.975878 0 0.218316 -0.975407 0 0.220411 -0.992693 0 0.120666"
-					"row3" "0 0 1 0 0 0.666667 0 0 1 -0.927962 0 0.372675 -0.953079 0 0.30272"
+					"row2" "-0.959079 0 0.283137 -1.00087 -6.69915e-08 0.482743 -0.975878 0 0.218316 -0.998977 0 -0.0452185 -0.992693 0 0.120666"
+					"row3" "0 0 1 0 0 0.666667 0 0 1 -0.996462 0 -0.0840472 -0.953079 0 0.30272"
 					"row4" "-0.0002568 -0.23102 0.229519 0.731806 -0.678379 -0.0652782 0 0 1 0 0 1 -0.0001605 -0.119086 0.307512"
 				}
 				distances
 				{
 					"row0" "100.288 185.914 225.575 318.316 306.069"
 					"row1" "31.4732 42.4623 118.273 271.309 182.014"
-					"row2" "24.6494 28.5466 87.9887 151.193 78.7729"
-					"row3" "3.36805 4.33333 23.0706 88.7027 25.733"
-					"row4" "10.4793 9.68616 11.7708 11.7639 8.02416"
+					"row2" "24.6494 28.5466 87.9887 147.626 78.7729"
+					"row3" "3.36805 4.33333 13.0706 82.605 25.733"
+					"row4" "10.4793 9.68616 7.87744 11.7639 8.02416"
 				}
 				offsets
 				{
@@ -4323,7 +4323,7 @@ world
 				{
 					"row0" "1.68527 6.73758 2.5 2.5 10.4793"
 					"row1" "0 0 0 5.74637 9.68616"
-					"row2" "0 5.57784 5 0 11.7708"
+					"row2" "0 5.57784 5 0 7.87744"
 					"row3" "5 5 4.43649 0 11.7639"
 					"row4" "0.631977 7.17198 1.875 1.875 8.02416"
 				}
@@ -5023,17 +5023,17 @@ world
 				{
 					"row0" "-2.31833e-05 -0.0231041 0.192752 0 1 0 0 1 0 0 1 0 0 0.999998 0.00194323"
 					"row1" "0.0063032 0.998728 -0.0500282 0 1 0 0 1 0 0 1 0 0.000772617 0.999976 -0.00693209"
-					"row2" "0 0.996838 0.079456 0 0.990249 0.139309 0 0.997509 0.0705379 0 1 0 0 0.999627 0.0273133"
-					"row3" "0 0.993293 0.115622 0 0.997592 0.0693539 0 0.997038 0.0769173 0 0.998141 -0.0609413 -0.0364473 0.998691 0.0358768"
-					"row4" "0.0913658 0.836934 -0.543011 -0.0248553 0.933042 -0.358907 0 0.900581 -0.434688 0 0.916066 -0.401027 -0.0851429 0.876999 -0.472889"
+					"row2" "0 0.999301 0.0373887 0 0.990249 0.139309 0 0.997509 0.0705379 0 1 0 0 0.999627 0.0273133"
+					"row3" "0 0.999669 -0.0257408 0 0.99906 0.0433507 0 0.998668 0.0515881 0 0.998141 -0.0609413 -0.0364473 0.998691 0.0358768"
+					"row4" "0.102906 0.942647 -0.317533 -0.0262827 0.986627 -0.16086 0 0.99304 -0.117776 0 0.916066 -0.401027 -0.0851429 0.876999 -0.472889"
 				}
 				distances
 				{
 					"row0" "2.78452 13.5103 62.3038 70.4308 160.815"
 					"row1" "203.047 296.063 324.394 394.355 366.343"
-					"row2" "237.195 252.717 301.883 329.653 422.721"
-					"row3" "210.779 133.227 260.02 315.679 342.961"
-					"row4" "238.377 234.082 228.744 230.922 238.654"
+					"row2" "236.611 252.717 301.883 329.653 422.721"
+					"row3" "209.435 133.031 259.595 315.679 342.961"
+					"row4" "211.644 221.369 207.446 230.922 238.654"
 				}
 				offsets
 				{
@@ -5064,7 +5064,7 @@ world
 					"row0" "9 9 9 9 9 9 9 9"
 					"row1" "9 9 9 9 9 9 9 9"
 					"row2" "9 9 9 9 9 9 9 9"
-					"row3" "1 9 9 1 1 1 1 0"
+					"row3" "9 9 9 9 9 1 1 0"
 				}
 				allowed_verts
 				{
@@ -5152,17 +5152,17 @@ world
 				"subdiv" "0"
 				normals
 				{
-					"row0" "0.621625 0.742864 0 0.44894 0.893562 0 0.394661 0.918827 -0.000736694 0.205772 0.978511 -0.0131722 0.0913658 0.836934 -0.543011"
-					"row1" "0.496641 0.867956 0 0.150615 0.988586 0.00368244 0 0.999882 0.0153803 -0.16336 0.969041 -0.185129 -0.0248553 0.933042 -0.358907"
-					"row2" "0 1 0 0 0.998615 0.0526187 0 0.997575 0.0695939 0 0.989756 -0.14277 0 0.900581 -0.434688"
+					"row0" "0.621625 0.742864 0 0.44894 0.893562 0 0.394661 0.918827 -0.000736694 0.205772 0.978511 -0.0131722 0.102906 0.942647 -0.317533"
+					"row1" "0.496641 0.867956 0 0.150615 0.988586 0.00368244 0 0.999882 0.0153803 -0.16336 0.969041 -0.185129 -0.0262827 0.986627 -0.16086"
+					"row2" "0 1 0 0 0.998615 0.0526187 0 0.997575 0.0695939 0 0.989756 -0.14277 0 0.99304 -0.117776"
 					"row3" "0 1 0 0 0.999647 0.026559 0 0.997635 0.0687332 0 0.953456 -0.301531 0 0.916066 -0.401027"
 					"row4" "-0.173315 0.984866 0 -0.224016 0.974585 0 -0.175659 0.984451 0 -0.310417 0.942517 -0.123706 -0.0851429 0.876999 -0.472889"
 				}
 				distances
 				{
-					"row0" "394.487 336.651 342.088 256.025 238.377"
-					"row1" "304.008 217.385 214.694 189.057 234.082"
-					"row2" "257.967 224.555 215.536 241.12 228.744"
+					"row0" "394.487 336.651 342.088 256.025 211.644"
+					"row1" "304.008 217.385 214.694 189.057 221.369"
+					"row2" "257.967 224.555 215.536 241.12 207.446"
 					"row3" "192.865 195.172 162.934 159.45 230.922"
 					"row4" "225.236 151.358 111.767 130.736 238.654"
 				}
@@ -5967,17 +5967,17 @@ world
 				{
 					"row0" "-0.00383818 -0.999972 -0.0064508 0 -0.996448 0.0842151 0 0 1 0 0.999549 0.0299212 -2.31833e-05 -0.0231041 0.192752"
 					"row1" "0.00601052 -0.997659 0.0681172 0 -0.852642 0.522495 0 0 -1 0 0.999994 0.00296048 0.0063032 0.998728 -0.0500282"
-					"row2" "-0.0209332 -0.347768 0.937347 0 0.213301 0.976987 0 0 -1 0 0.994526 -0.104461 0 0.996838 0.079456"
-					"row3" "-0.235847 0.962129 0.136689 0 0.992434 0.1228 0 0.998366 -0.0572099 0.0443317 0.998357 -0.0247095 0 0.993293 0.115622"
-					"row4" "-0.076769 0.228698 -0.25602 -0.865261 0.442899 -0.234868 -0.305566 0.898406 -0.31543 0.093822 0.978741 -0.18238 0.0913658 0.836934 -0.543011"
+					"row2" "-0.0209332 -0.347768 0.937347 0 0.213301 0.976987 0 0 -1 0 0.994526 -0.104461 0 0.999301 0.0373887"
+					"row3" "-0.235847 0.962129 0.136689 0 0.992434 0.1228 0 0.998366 -0.0572099 0.0443317 0.998357 -0.0247095 0 0.999669 -0.0257408"
+					"row4" "-0.076769 0.228698 -0.25602 -0.865261 0.442899 -0.234868 -0.305566 0.898406 -0.31543 0.093822 0.978741 -0.18238 0.102906 0.942647 -0.317533"
 				}
 				distances
 				{
 					"row0" "154.187 90.3209 1.25 41.7763 2.78452"
 					"row1" "75.0637 81.6781 43.3365 77.5803 203.047"
-					"row2" "18.9579 41.6639 17 111.367 237.195"
-					"row3" "49.2766 44.6937 63.691 140.17 210.779"
-					"row4" "30.5998 31.8879 70.3551 85.2771 238.377"
+					"row2" "18.9579 41.6639 17 111.367 236.611"
+					"row3" "49.2766 44.6937 63.691 140.17 209.435"
+					"row4" "30.5998 31.8879 70.3551 85.2771 211.644"
 				}
 				offsets
 				{
@@ -6008,7 +6008,7 @@ world
 					"row0" "9 9 9 9 9 9 9 9"
 					"row1" "9 9 9 9 9 9 9 9"
 					"row2" "9 9 9 9 9 9 9 9"
-					"row3" "9 9 9 9 9 9 9 0"
+					"row3" "9 9 9 9 9 9 9 9"
 				}
 				allowed_verts
 				{
@@ -6142,7 +6142,7 @@ world
 				"subdiv" "0"
 				normals
 				{
-					"row0" "0.0913658 0.836934 -0.543011 -0.280472 0.783273 -0.554814 -0.555499 0.818883 -0.144401 -0.0282555 0.974547 0.222394 0.737981 -0.00146926 0.50864"
+					"row0" "0.102906 0.942647 -0.317533 -0.280472 0.783273 -0.554814 -0.555499 0.818883 -0.144401 -0.0282555 0.974547 0.222394 0.737981 -0.00146926 0.50864"
 					"row1" "0.093822 0.978741 -0.18238 -0.774605 -0.000826892 -0.428152 -0.74152 0.463251 0.192321 -0.85712 0 -0.00720551 -0.627485 0.77211 0.100538"
 					"row2" "-0.305566 0.898406 -0.31543 -0.814961 0 -0.309841 -0.815823 0 0.306738 -0.489619 0 -0.820795 0.0352678 0 -0.999378"
 					"row3" "-0.865261 0.442899 -0.234868 -0.846618 0 0.156223 -0.626128 0 -0.682931 0.0911641 0 -0.994328 0.632942 0 -0.774199"
@@ -6150,7 +6150,7 @@ world
 				}
 				distances
 				{
-					"row0" "238.377 188.775 103.8 61.567 68.6991"
+					"row0" "211.644 188.775 103.8 61.567 68.6991"
 					"row1" "85.2771 62.298 75.553 38.1538 7.88966"
 					"row2" "70.3551 28.8851 37.9419 63.1533 41.5378"
 					"row3" "31.8879 20.0784 15.356 67.0366 26.9549"
@@ -6295,7 +6295,7 @@ world
 					"row1" "0.44894 0.893562 0 0.520127 0.794843 0 0.754976 0.473477 0 0.857143 0 0 0.999645 -0.0266316 0"
 					"row2" "0.394661 0.918827 -0.000736694 0.305003 0.934462 -0.0126608 0.405445 0.881052 0 0.857143 0 0 0.999717 -0.0237847 0"
 					"row3" "0.205772 0.978511 -0.0131722 -0.175642 0.948762 -0.240543 0.294553 0.915746 -0.20813 0.846534 0 -0.156848 0.995684 -0.0086209 -0.0924047"
-					"row4" "0.0913658 0.836934 -0.543011 -0.280472 0.783273 -0.554814 -0.555499 0.818883 -0.144401 -0.0282555 0.974547 0.222394 0.737981 -0.00146926 0.50864"
+					"row4" "0.102906 0.942647 -0.317533 -0.280472 0.783273 -0.554814 -0.555499 0.818883 -0.144401 -0.0282555 0.974547 0.222394 0.737981 -0.00146926 0.50864"
 				}
 				distances
 				{
@@ -6303,7 +6303,7 @@ world
 					"row1" "336.651 227.943 168.037 170.642 165.373"
 					"row2" "342.088 190.097 124.224 112.704 124.696"
 					"row3" "256.025 189.721 104.152 80.3071 98.924"
-					"row4" "238.377 188.775 103.8 61.567 68.6991"
+					"row4" "211.644 188.775 103.8 61.567 68.6991"
 				}
 				offsets
 				{
@@ -11402,7 +11402,7 @@ entity
 	"angles" "0 0 0"
 	"orientationtype" "1"
 	"spawnflags" "0"
-	"target" "sspl_path_A_2"
+	"target" "sspl_path_A_4"
 	"targetname" "sspl_path_A_1"
 	"origin" "544 -1760 304"
 	editor
@@ -11442,7 +11442,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_A_3"
 	"targetname" "sspl_path_A_2"
-	"origin" "1568 -1296 304"
+	"origin" "2120 -784 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -11752,7 +11752,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_cp_one1"
 	"targetname" "sspl_path_A_3"
-	"origin" "1856 -672 304"
+	"origin" "2176 -352 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -12493,6 +12493,536 @@ entity
 	editor
 	{
 		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "11490"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "552 -1759.97 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "11472"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/custom/train_bumper.mdl"
+	"skin" "0"
+	"solid" "6"
+	"origin" "448 -1760 259.451"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "11608"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_5"
+	"targetname" "sspl_path_A_4"
+	"origin" "1248 -1760 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "11620"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "806 -1760 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "11967"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_8"
+	"targetname" "sspl_path_A_7"
+	"origin" "1576 -1448 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "11700"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1060 -1760 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "11763"
+	"classname" "prop_static"
+	"angles" "0 270 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_64.mdl"
+	"solid" "0"
+	"origin" "1216 -1760 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "11808"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_rails_st_64.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1280 -1760 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "11859"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1503 -1760 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "12348"
+	"classname" "prop_static"
+	"angles" "0 135 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_arc_45degree.mdl"
+	"solid" "0"
+	"origin" "1240 -1750 260.826"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "11914"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1756 -1760 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "11950"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_6"
+	"targetname" "sspl_path_A_5"
+	"origin" "1336 -1700 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "11954"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_7"
+	"targetname" "sspl_path_A_6"
+	"origin" "1552 -1488 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "12624"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_rails_st_64.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1344 -1760 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "12646"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_tie.mdl"
+	"screenspacefade" "0"
+	"solid" "0"
+	"origin" "1364 -1760 260"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "12653"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_tie.mdl"
+	"screenspacefade" "0"
+	"solid" "0"
+	"origin" "1344 -1760 260"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "12659"
+	"classname" "prop_static"
+	"angles" "0 135 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1445 -1596 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "12690"
+	"classname" "prop_static"
+	"angles" "0 225 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_rails_st_64.mdl"
+	"screenspacefade" "0"
+	"solid" "0"
+	"origin" "1333 -1708 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "12708"
+	"classname" "prop_static"
+	"angles" "0 225 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_tie.mdl"
+	"screenspacefade" "0"
+	"solid" "0"
+	"origin" "1341 -1700 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "12775"
+	"classname" "prop_static"
+	"angles" "0 315 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_s_curve_96_mirrored.mdl"
+	"solid" "0"
+	"origin" "1591 -1382 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "12802"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_9"
+	"targetname" "sspl_path_A_8"
+	"origin" "1608 -1312 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "12808"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_2"
+	"targetname" "sspl_path_A_9"
+	"origin" "1640 -1264 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "12861"
+	"classname" "prop_static"
+	"angles" "0 315 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "2095 -810 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "12819"
+	"classname" "prop_static"
+	"angles" "0 315 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1737 -1168 262"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "12837"
+	"classname" "prop_static"
+	"angles" "0 315 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1916 -989 262"
+	editor
+	{
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 500]"
