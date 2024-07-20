@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "131"
+	"mapversion" "132"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "64"
+	"nGridSpacing" "32"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "131"
+	"mapversion" "132"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -14043,6 +14043,202 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	solid
+	{
+		"id" "18577"
+		side
+		{
+			"id" "1511"
+			"plane" "(2048 515.429 248) (2048 516 248) (2176 516 248)"
+			vertices_plus
+			{
+				"v" "2048 515.429 248"
+				"v" "2048 516 248"
+				"v" "2176 516 248"
+				"v" "2176 515.429 248"
+			}
+			"material" "CP_MANOR/WOOD_FLOOR01"
+			"uaxis" "[-0 1 0 0] 0.25"
+			"vaxis" "[1 0 0 0] 0.25"
+			"rotation" "90"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1510"
+			"plane" "(2048 516 248) (2048 515.429 248) (2048 516 247.636)"
+			vertices_plus
+			{
+				"v" "2048 516 248"
+				"v" "2048 515.429 248"
+				"v" "2048 516 247.636"
+			}
+			"material" "CP_MANOR/WOOD_FLOOR01"
+			"uaxis" "[0 -0 1 0] 0.25"
+			"vaxis" "[0 1 0 0] 0.25"
+			"rotation" "90"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1509"
+			"plane" "(2176 516 247.637) (2176 515.429 248) (2176 516 248)"
+			vertices_plus
+			{
+				"v" "2176 516 247.637"
+				"v" "2176 515.429 248"
+				"v" "2176 516 248"
+			}
+			"material" "CP_MANOR/WOOD_FLOOR01"
+			"uaxis" "[0 -0 1 0] 0.25"
+			"vaxis" "[0 1 0 0] 0.25"
+			"rotation" "90"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1508"
+			"plane" "(2048 516 247.637) (2048 515.428 248) (2176 515.428 248)"
+			vertices_plus
+			{
+				"v" "2048 516 247.637"
+				"v" "2048 515.428 248"
+				"v" "2176 515.428 248"
+				"v" "2176 516 247.637"
+			}
+			"material" "CP_MANOR/WOOD_FLOOR01"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1507"
+			"plane" "(2176 516 247.636) (2176 516 248) (2048 516 248)"
+			vertices_plus
+			{
+				"v" "2176 516 247.636"
+				"v" "2176 516 248"
+				"v" "2048 516 248"
+				"v" "2048 516 247.636"
+			}
+			"material" "CP_MANOR/WOOD_FLOOR01"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 220 201"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	solid
+	{
+		"id" "18576"
+		side
+		{
+			"id" "1506"
+			"plane" "(2048 1152 16) (2048 504 16) (2176 504 16)"
+			vertices_plus
+			{
+				"v" "2048 1152 16"
+				"v" "2048 504 16"
+				"v" "2176 504 16"
+				"v" "2176 1152 16"
+			}
+			"material" "CP_MANOR/WOOD_FLOOR01"
+			"uaxis" "[-0 1 0 0] 0.25"
+			"vaxis" "[1 0 0 0] 0.25"
+			"rotation" "90"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1505"
+			"plane" "(2048 504 16) (2048 1152 16) (2048 504 247.997)"
+			vertices_plus
+			{
+				"v" "2048 504 16"
+				"v" "2048 1152 16"
+				"v" "2048 504 247.997"
+			}
+			"material" "CP_MANOR/WOOD_FLOOR01"
+			"uaxis" "[0 -0 1 0] 0.25"
+			"vaxis" "[0 1 0 0] 0.25"
+			"rotation" "90"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1504"
+			"plane" "(2176 1152 16) (2176 504 16) (2176 504 247.999)"
+			vertices_plus
+			{
+				"v" "2176 1152 16"
+				"v" "2176 504 16"
+				"v" "2176 504 247.999"
+			}
+			"material" "CP_MANOR/WOOD_FLOOR01"
+			"uaxis" "[0 -0 1 0] 0.25"
+			"vaxis" "[0 1 0 0] 0.25"
+			"rotation" "90"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1503"
+			"plane" "(2048 504 248) (2048 1152 16) (2176 1152 16)"
+			vertices_plus
+			{
+				"v" "2048 504 248"
+				"v" "2048 1152 16"
+				"v" "2176 1152 16"
+				"v" "2176 504 248"
+			}
+			"material" "CP_MANOR/WOOD_FLOOR01"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1502"
+			"plane" "(2176 504 16) (2048 504 16) (2048 504 247.999)"
+			vertices_plus
+			{
+				"v" "2176 504 16"
+				"v" "2048 504 16"
+				"v" "2048 504 247.999"
+				"v" "2176 504 247.999"
+			}
+			"material" "CP_MANOR/WOOD_FLOOR01"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 220 201"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 	group
 	{
 		"id" "720"
@@ -16097,7 +16293,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_B_4"
 	"targetname" "sspl_path_B_3"
-	"origin" "1104 2144 304"
+	"origin" "1520 2144 56"
 	editor
 	{
 		"color" "255 192 0"
@@ -16320,9 +16516,9 @@ entity
 	"angles" "0 0 0"
 	"orientationtype" "1"
 	"spawnflags" "0"
-	"target" "sspl_path_B_3"
+	"target" "sspl_path_B_5"
 	"targetname" "sspl_path_B_2"
-	"origin" "1664 1472 304"
+	"origin" "2112 512 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -17197,6 +17393,25 @@ entity
 		"visgroupautoshown" "1"
 		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
 		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "18617"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_B_3"
+	"targetname" "sspl_path_B_5"
+	"origin" "2112 1216 80"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your second track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
 	}
 }
 cameras
