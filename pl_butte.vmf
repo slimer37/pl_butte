@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "132"
+	"mapversion" "134"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "32"
+	"nGridSpacing" "8"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "132"
+	"mapversion" "134"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -14239,6 +14239,124 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	solid
+	{
+		"id" "18633"
+		side
+		{
+			"id" "1519"
+			"plane" "(-832 928 320) (1248 928 320) (1248 512 320)"
+			vertices_plus
+			{
+				"v" "-832 928 320"
+				"v" "1248 928 320"
+				"v" "1248 512 320"
+				"v" "-832 512 320"
+			}
+			"material" "CONCRETE/CONCRETEFLOOR007"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1520"
+			"plane" "(-832 512 -640) (1248 512 -640) (1248 928 -640)"
+			vertices_plus
+			{
+				"v" "-832 512 -640"
+				"v" "1248 512 -640"
+				"v" "1248 928 -640"
+				"v" "-832 928 -640"
+			}
+			"material" "CONCRETE/CONCRETEFLOOR007"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1521"
+			"plane" "(-832 928 320) (-832 512 320) (-832 512 -640)"
+			vertices_plus
+			{
+				"v" "-832 928 320"
+				"v" "-832 512 320"
+				"v" "-832 512 -640"
+				"v" "-832 928 -640"
+			}
+			"material" "CONCRETE/CONCRETEFLOOR007"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1522"
+			"plane" "(1248 928 -640) (1248 512 -640) (1248 512 320)"
+			vertices_plus
+			{
+				"v" "1248 928 -640"
+				"v" "1248 512 -640"
+				"v" "1248 512 320"
+				"v" "1248 928 320"
+			}
+			"material" "CONCRETE/CONCRETEFLOOR007"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1523"
+			"plane" "(1248 928 320) (-832 928 320) (-832 928 -640)"
+			vertices_plus
+			{
+				"v" "1248 928 320"
+				"v" "-832 928 320"
+				"v" "-832 928 -640"
+				"v" "1248 928 -640"
+			}
+			"material" "CONCRETE/CONCRETEFLOOR007"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "1524"
+			"plane" "(1248 512 -640) (-832 512 -640) (-832 512 320)"
+			vertices_plus
+			{
+				"v" "1248 512 -640"
+				"v" "-832 512 -640"
+				"v" "-832 512 320"
+				"v" "1248 512 320"
+			}
+			"material" "CONCRETE/CONCRETEFLOOR007"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 208 233"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 	group
 	{
 		"id" "720"
@@ -16370,9 +16488,9 @@ entity
 	"angles" "0 0 0"
 	"orientationtype" "1"
 	"spawnflags" "0"
-	"target" "sspl_path_cp_two1"
+	"target" "sspl_path_B_6"
 	"targetname" "sspl_path_B_4"
-	"origin" "928 2144 384"
+	"origin" "936 2144 368"
 	editor
 	{
 		"color" "255 192 0"
@@ -17405,6 +17523,25 @@ entity
 	"target" "sspl_path_B_3"
 	"targetname" "sspl_path_B_5"
 	"origin" "2112 1216 80"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your second track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "18638"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_cp_two1"
+	"targetname" "sspl_path_B_6"
+	"origin" "864 2144 384"
 	editor
 	{
 		"color" "255 192 0"
