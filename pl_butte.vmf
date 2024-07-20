@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "134"
+	"mapversion" "135"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "8"
+	"nGridSpacing" "64"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "134"
+	"mapversion" "135"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -15426,10 +15426,6 @@ entity
 	{
 		"OnCapTeam2" "sspl_pushzoneSetControlPointcp_four01"
 		"OnCapTeam2" "setupgate_stage3*Open01"
-		"OnCapTeam2" "blu_spawn_primaryDisable01"
-		"OnCapTeam2" "blu_spawnDisable01"
-		"OnCapTeam2" "blu_spawn_2_door*Enable01"
-		"OnCapTeam2" "blu_spawn_secondaryEnable01"
 	}
 	"origin" "-2048 0 264"
 	editor
@@ -15644,6 +15640,10 @@ entity
 	connections
 	{
 		"OnCapTeam2" "sspl_pushzoneSetControlPointcp_three01"
+		"OnCapTeam2" "blu_spawn_secondaryEnable01"
+		"OnCapTeam2" "blu_spawn_2_door*Enable01"
+		"OnCapTeam2" "blu_spawnDisable01"
+		"OnCapTeam2" "blu_spawn_primaryDisable01"
 	}
 	"origin" "0 2144 344"
 	editor
@@ -16066,10 +16066,10 @@ entity
 {
 	"id" "5490"
 	"classname" "func_instance"
-	"angles" "-0 30 0"
+	"angles" "-0 -60 0"
 	"file" "instances/blu_spawn_2"
 	"fixup_style" "2"
-	"origin" "-2176 1920 256"
+	"origin" "2176 2368 16"
 	editor
 	{
 		"color" "220 30 220"
@@ -16563,7 +16563,7 @@ entity
 {
 	"id" "5157"
 	"classname" "prop_static"
-	"angles" "0 60 0"
+	"angles" "0 120 0"
 	"disableselfshadowing" "0"
 	"disableshadows" "0"
 	"disablevertexlighting" "0"
@@ -16580,7 +16580,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "1856 2432 224"
+	"origin" "-2200 2296 256"
 	editor
 	{
 		"color" "255 255 0"
@@ -17111,10 +17111,10 @@ entity
 {
 	"id" "3886"
 	"classname" "func_instance"
-	"angles" "-0 -15 0"
+	"angles" "-0 5.97642e-06 0"
 	"file" "instances/area_redsniper.vmf"
 	"fixup_style" "2"
-	"origin" "2507.46 1383.88 0.25"
+	"origin" "2432 1536 0.25"
 	editor
 	{
 		"color" "220 30 220"
