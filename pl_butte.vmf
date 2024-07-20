@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "127"
+	"mapversion" "128"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "4"
+	"nGridSpacing" "16"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "127"
+	"mapversion" "128"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -12003,7 +12003,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_cp_two1"
 	"targetname" "sspl_path_B_4"
-	"origin" "912 2144 384"
+	"origin" "928 2144 384"
 	editor
 	{
 		"color" "255 192 0"
