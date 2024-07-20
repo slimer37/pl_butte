@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "135"
+	"mapversion" "137"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "135"
+	"mapversion" "137"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -14497,7 +14497,7 @@ entity
 	"spawnflags" "514"
 	"speed" "0"
 	"StartSound" "Cart.RollStart"
-	"startspeed" "300"
+	"startspeed" "90"
 	"StopSound" "Cart.RollStop"
 	"target" "sspl_path_start"
 	"targetname" "sspl_train"
