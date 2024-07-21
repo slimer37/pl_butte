@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "152"
+	"mapversion" "154"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "152"
+	"mapversion" "154"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -15235,6 +15235,8 @@ entity
 		"OnCapTeam2" "sspl_pushzoneSetControlPointcp_two0.011"
 		"OnCapTeam2" "red_exit_aDisable0-1"
 		"OnCapTeam2" "red_exit_a_blockEnable0-1"
+		"OnCapTeam2" "relay_no_underground_spawnTrigger0-1"
+		"OnCapTeam2" "relay_enable_red_to_upper_spawnTrigger0-1"
 	}
 	"origin" "2176 0 264"
 	editor
@@ -15423,12 +15425,7 @@ entity
 	{
 		"OnCapTeam2" "sspl_pushzoneSetControlPointcp_four01"
 		"OnCapTeam2" "setupgate_stage3*Open01"
-		"OnCapTeam2" "underground_spawn_filterSetTeam301"
-		"OnCapTeam2" "underground_spawn_redDisable01"
-		"OnCapTeam2" "underground_spawn_bluEnable01"
-		"OnCapTeam2" "final_spawn_redEnable01"
-		"OnCapTeam2" "blu_spawn_2_door*Disable01"
-		"OnCapTeam2" "blu_spawn_secondaryDisable01"
+		"OnCapTeam2" "relay_ug_spawn_to_bluTrigger0-1"
 	}
 	"origin" "-2048 0 264"
 	editor
@@ -15643,10 +15640,7 @@ entity
 	connections
 	{
 		"OnCapTeam2" "sspl_pushzoneSetControlPointcp_three01"
-		"OnCapTeam2" "blu_spawn_secondaryEnable01"
-		"OnCapTeam2" "blu_spawn_2_door*Enable01"
-		"OnCapTeam2" "blu_spawnDisable01"
-		"OnCapTeam2" "blu_spawn_primaryDisable01"
+		"OnCapTeam2" "relay_a_spawn_to_bluTrigger01"
 	}
 	"origin" "0 2144 344"
 	editor
@@ -17617,6 +17611,102 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 11000]"
+	}
+}
+entity
+{
+	"id" "19826"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "relay_no_underground_spawn"
+	connections
+	{
+		"OnTrigger" "underground_spawnDisable0-1"
+		"OnTrigger" "underground_spawn_door_trigger*Disable0-1"
+		"OnTrigger" "underground_spawn_redDisable0-1"
+		"OnTrigger" "underground_spawn_bluDisable0-1"
+	}
+	"origin" "608 -1376 375.988"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "19853"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "relay_ug_spawn_to_blu"
+	connections
+	{
+		"OnTrigger" "underground_spawnEnable0-1"
+		"OnTrigger" "underground_spawn_door_trigger*Enable0-1"
+		"OnTrigger" "underground_spawn_filterSetTeam30-1"
+		"OnTrigger" "blu_spawn_secondaryDisable01"
+		"OnTrigger" "blu_spawn_2_door*Disable01"
+		"OnTrigger" "underground_spawn_filterSetTeam301"
+		"OnTrigger" "underground_spawn_bluEnable01"
+		"OnTrigger" "underground_spawn_redDisable01"
+	}
+	"origin" "640 -1376 375.988"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "19866"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "relay_enable_red_to_upper_spawn"
+	connections
+	{
+		"OnTrigger" "final_spawn_redEnable0-1"
+		"OnTrigger" "red_spawnEnable0-1"
+	}
+	"origin" "672 -1376 375.988"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "19881"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "relay_a_spawn_to_blu"
+	connections
+	{
+		"OnTrigger" "blu_spawn_2_door*Enable0-1"
+		"OnTrigger" "blu_spawn_2Enable0-1"
+		"OnSpawn" "blu_spawn_2_door*Disable0-1"
+		"OnSpawn" "blu_spawn_2Disable0-1"
+		"OnTrigger" "blu_spawn_primaryDisable01"
+		"OnTrigger" "blu_spawnDisable01"
+	}
+	"origin" "704 -1376 375.988"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
