@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "2"
+	"mapversion" "3"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "2"
+	"mapversion" "3"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites_2fort"
 	"detailvbsp" "detail_2fort.vbsp"
@@ -2377,12 +2377,12 @@ entity
 entity
 {
 	"id" "339"
-	"classname" "item_healthkit_medium"
+	"classname" "item_healthkit_full"
 	"angles" "0 270 0"
 	"AutoMaterialize" "1"
 	"fademaxdist" "0"
 	"fademindist" "-1"
-	"origin" "558.344 -288 -335.764"
+	"origin" "880 -288 -335.764"
 	editor
 	{
 		"color" "0 0 200"
@@ -2399,7 +2399,7 @@ entity
 	"AutoMaterialize" "1"
 	"fademaxdist" "0"
 	"fademindist" "-1"
-	"origin" "622.344 -288 -335.764"
+	"origin" "576 -288 -335.764"
 	editor
 	{
 		"color" "0 0 200"
