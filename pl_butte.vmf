@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "155"
+	"mapversion" "156"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "155"
+	"mapversion" "156"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -16048,9 +16048,9 @@ entity
 	connections
 	{
 		"OnTrigger" "blu_spawn_2_door*Enable0-1"
-		"OnTrigger" "blu_spawn_2Enable0-1"
+		"OnTrigger" "blue_spawn_2Enable0-1"
 		"OnSpawn" "blu_spawn_2_door*Disable0-1"
-		"OnSpawn" "blu_spawn_2Disable0-1"
+		"OnSpawn" "blue_spawn_2Disable0-1"
 		"OnTrigger" "blu_spawn_primaryDisable01"
 		"OnTrigger" "blu_spawnDisable01"
 	}
@@ -16102,6 +16102,7 @@ entity
 		"OnTrigger" "underground_spawn_bluEnable01"
 		"OnTrigger" "underground_spawn_redDisable01"
 		"OnTrigger" "underground_spawnSetTeam30-1"
+		"OnTrigger" "blue_spawn_2Disable01"
 	}
 	"origin" "640 -1376 375.988"
 	editor
