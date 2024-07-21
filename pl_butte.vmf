@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "160"
+	"mapversion" "162"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "160"
+	"mapversion" "162"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -15412,6 +15412,7 @@ entity
 		"OnCapTeam2" "relay_ug_spawn_to_bluTrigger0-1"
 		"OnCapTeam2" "setupgate_block3Kill01"
 		"OnCapTeam2" "arch_entryDisable0-1"
+		"OnCapTeam2" "arch_entry_blockEnable0-1"
 	}
 	"origin" "-2048 0 264"
 	editor
