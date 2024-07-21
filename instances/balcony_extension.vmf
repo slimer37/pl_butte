@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "4"
+	"mapversion" "5"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "4"
+	"mapversion" "5"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites_2fort"
 	"detailvbsp" "detail_2fort.vbsp"
@@ -1332,6 +1332,7 @@ entity
 	"origin" "96 -168 -224"
 	"spawnflags" "1"
 	"StartDisabled" "0"
+	"targetname" "underground_spawn_door_trigger2"
 	"wait" "1"
 	connections
 	{
