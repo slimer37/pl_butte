@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "172"
+	"mapversion" "173"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "172"
+	"mapversion" "173"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -16057,35 +16057,6 @@ world
 }
 entity
 {
-	"id" "21706"
-	"classname" "info_overlay"
-	"angles" "0 270 0"
-	"BasisNormal" "0.337073 0 0.941479"
-	"BasisOrigin" "2072 832 131.926"
-	"BasisU" "0 -1 0"
-	"BasisV" "0.941478 0 -0.337073"
-	"EndU" "10"
-	"EndV" "0"
-	"fademindist" "-1"
-	"material" "signs/hazard_yellow001"
-	"sides" "1503"
-	"StartU" "0"
-	"StartV" "1"
-	"uv0" "-323.447 31.5014 0"
-	"uv1" "-323.736 46.5994 0"
-	"uv2" "323.979 -31.5646 0"
-	"uv3" "323.204 -46.5362 0"
-	"origin" "2072 832 131.926"
-	editor
-	{
-		"color" "80 150 225"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
 	"id" "721"
 	"classname" "prop_physics_override"
 	"angles" "0 180 0"
@@ -17671,6 +17642,897 @@ entity
 }
 entity
 {
+	"id" "21706"
+	"classname" "info_overlay"
+	"angles" "0 270 0"
+	"BasisNormal" "0.337073 0 0.941479"
+	"BasisOrigin" "2072 832 131.926"
+	"BasisU" "0 -1 0"
+	"BasisV" "0.941478 0 -0.337073"
+	"EndU" "10"
+	"EndV" "0"
+	"fademindist" "-1"
+	"material" "signs/hazard_yellow001"
+	"sides" "1503"
+	"StartU" "0"
+	"StartV" "1"
+	"uv0" "-323.447 31.5014 0"
+	"uv1" "-323.736 46.5994 0"
+	"uv2" "323.979 -31.5646 0"
+	"uv3" "323.204 -46.5362 0"
+	"origin" "2072 832 131.926"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "21666"
+	"classname" "info_overlay"
+	"angles" "0 270 0"
+	"BasisNormal" "0.337073 0 0.941479"
+	"BasisOrigin" "2152 828.207 131.926"
+	"BasisU" "0 -1 0"
+	"BasisV" "0.941478 0 -0.337073"
+	"EndU" "10"
+	"EndV" "0"
+	"fademindist" "-1"
+	"material" "signs/hazard_yellow001"
+	"sides" "1503"
+	"StartU" "0"
+	"StartV" "1"
+	"uv0" "-323.447 31.5014 0"
+	"uv1" "-323.736 46.5994 0"
+	"uv2" "323.979 -31.5646 0"
+	"uv3" "323.204 -46.5362 0"
+	"origin" "2152 828.207 131.926"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "21636"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_B_3"
+	"targetname" "sspl_path_B_7"
+	"origin" "2112 1200 80"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your second track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "19866"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "relay_enable_red_to_upper_spawn"
+	connections
+	{
+		"OnTrigger" "final_spawn_redEnable0-1"
+		"OnTrigger" "red_spawnEnable0-1"
+		"OnTrigger" "red_underground_teleport_triggerEnable0-1"
+	}
+	"origin" "672 -1376 375.988"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "19881"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "relay_a_spawn_to_blu"
+	connections
+	{
+		"OnTrigger" "blu_spawn_2_door*Enable0-1"
+		"OnTrigger" "blue_spawn_2Enable0-1"
+		"OnSpawn" "blu_spawn_2_door*Disable0-1"
+		"OnSpawn" "blue_spawn_2Disable0-1"
+		"OnTrigger" "blu_spawn_primaryDisable01"
+		"OnTrigger" "blu_spawnDisable01"
+		"OnTrigger" "blu_spawn_secondaryEnable0-1"
+	}
+	"origin" "704 -1376 375.988"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "19362"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/blu_spawn_3"
+	"fixup_style" "2"
+	"origin" "192 800 96"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 8500]"
+	}
+}
+entity
+{
+	"id" "2612"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_D_6"
+	"targetname" "sspl_path_D_2"
+	"origin" "-2048 -768 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "833"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamGoalString#Goldrush_blue_final_goal0-1"
+		"OnMultiNewRound" "sspl_gamerulesSetRedTeamGoalString#Goldrush_red_final_goal0-1"
+		"OnMultiNewRound" "sspl_gamerulesSetRedTeamRole10-1"
+		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamRole20-1"
+		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamRespawnWaveTime30-1"
+		"OnMultiNewRound" "sspl_gamerulesSetRedTeamRespawnWaveTime90-1"
+	}
+	"origin" "512 -1376 400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "You only need one logic_auto. If you already have one copy it's outputs here."
+		"logicalpos" "[0 -11768]"
+	}
+}
+entity
+{
+	"id" "2619"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_C_4"
+	"targetname" "sspl_path_C_2"
+	"origin" "-928 2144 384"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your third track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "6627"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/red_arch"
+	"fixup_style" "2"
+	"origin" "-1248 192 256"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "837"
+	"classname" "team_round_timer"
+	"auto_countdown" "1"
+	"max_length" "600"
+	"setup_length" "70"
+	"show_in_hud" "1"
+	"show_time_remaining" "1"
+	"start_paused" "0"
+	"targetname" "sspl_timer"
+	"timer_length" "270"
+	connections
+	{
+		"OnFinished" "sspl_time_endRoundWin0-1"
+		"OnSetupFinished" "blu_first_spawn_door_trigger*Enable0-1"
+	}
+	"origin" "480 -1376 352"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Timer length and increases upon point capture are starting places. Adjust them to your map accordingly."
+		"logicalpos" "[0 -15768]"
+	}
+}
+entity
+{
+	"id" "839"
+	"classname" "game_round_win"
+	"force_map_reset" "1"
+	"switch_teams" "1"
+	"targetname" "sspl_time_end"
+	"TeamNum" "2"
+	"origin" "480 -1376 336"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -15768]"
+	}
+}
+entity
+{
+	"id" "841"
+	"classname" "team_train_watcher"
+	"env_spark_name" "sspl_cartsparks"
+	"goal_node" "sspl_path_end"
+	"handle_train_movement" "1"
+	"hud_min_speed_level_1" "1"
+	"hud_min_speed_level_2" "60"
+	"hud_min_speed_level_3" "80"
+	"linked_cp_1" "cp_one"
+	"linked_cp_2" "cp_two"
+	"linked_cp_3" "cp_three"
+	"linked_cp_4" "cp_four"
+	"linked_pathtrack_1" "sspl_path_cp_one3"
+	"linked_pathtrack_2" "sspl_path_cp_two3"
+	"linked_pathtrack_3" "sspl_path_cp_three3"
+	"linked_pathtrack_4" "sspl_path_end"
+	"speed_forward_modifier" "1"
+	"start_node" "sspl_path_start"
+	"targetname" "sspl_watcher"
+	"train" "sspl_train"
+	"train_can_recede" "1"
+	"origin" "480 -1376 368"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 7500]"
+	}
+}
+entity
+{
+	"id" "2775"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/sniper-platform-1"
+	"origin" "1477 -517 256"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 9000]"
+	}
+}
+entity
+{
+	"id" "932"
+	"classname" "filter_activator_name"
+	"filtername" "sspl_cart"
+	"Negated" "0"
+	"targetname" "sspl_filter_cart"
+	"origin" "528 -1376 400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "This is used so only the cart prop will activate the final capture and explosion."
+		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "14786"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_7"
+	"targetname" "sspl_path_A_16"
+	"origin" "1600 -1692 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "18638"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "32"
+	"target" "sspl_path_cp_two1"
+	"targetname" "sspl_path_B_6"
+	"origin" "864 2144 384"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your second track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "18617"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "64"
+	"target" "sspl_path_B_7"
+	"targetname" "sspl_path_B_5"
+	"origin" "2112 1152 80"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your second track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "14782"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_16"
+	"targetname" "sspl_path_A_15"
+	"origin" "1528 -1760 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14778"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_15"
+	"targetname" "sspl_path_A_14"
+	"origin" "1440 -1812 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14774"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_14"
+	"targetname" "sspl_path_A_13"
+	"origin" "1380 -1836 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14770"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_6"
+	"targetname" "sspl_path_A_12"
+	"origin" "1180 -1856 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14766"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_12"
+	"targetname" "sspl_path_A_11"
+	"origin" "1144 -1852 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14704"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_11"
+	"targetname" "sspl_path_A_10"
+	"origin" "1108 -1840 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "14675"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1971 -1046 259.252"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "14646"
+	"classname" "prop_static"
+	"angles" "0 230.5 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_32.mdl"
+	"screenspacefade" "0"
+	"solid" "0"
+	"origin" "1935.13 -1249.79 259.582"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "14632"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_arc_45degree_128.mdl"
+	"screenspacefade" "0"
+	"solid" "0"
+	"origin" "1971 -1205 259.193"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "14620"
+	"classname" "prop_static"
+	"angles" "0 323 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1850 -1362 260.337"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "14596"
+	"classname" "prop_static"
+	"angles" "0 323 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1697 -1565 260.337"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "14584"
+	"classname" "prop_static"
+	"angles" "0 53.5 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_arc_22_5degree_512.mdl"
+	"screenspacefade" "0"
+	"solid" "0"
+	"origin" "1551 -1733 260"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "14574"
+	"classname" "prop_static"
+	"angles" "0 30 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_arc_22_5degree_512.mdl"
+	"screenspacefade" "0"
+	"solid" "0"
+	"origin" "1394 -1824 260"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "14552"
+	"classname" "prop_static"
+	"angles" "0 275.5 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_64.mdl"
+	"solid" "0"
+	"origin" "1277 -1853 260"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "14540"
+	"classname" "prop_static"
+	"angles" "0 270 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_64.mdl"
+	"solid" "0"
+	"origin" "1215 -1856.04 260"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "14459"
+	"classname" "prop_static"
+	"angles" "0 270 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_s_curve_96.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "1055 -1808 260"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "11950"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_10"
+	"targetname" "sspl_path_A_5"
+	"origin" "1012 -1780 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "11620"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_256.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "800 -1760 260"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "40"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "pl_butte_building.vmf"
+	"fixup_style" "2"
+	"origin" "0 0 256"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "6941"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/last_rocks.vmf"
+	"fixup_style" "0"
+	"origin" "-1824 -1648 608"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "923"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"targetname" "sspl_path_end"
+	connections
+	{
+		"OnPass" "sspl_constraintBreak0.1-1"
+		"OnPass" "sspl_trainKill0.1-1"
+		"OnPass" "sspl_carttipPlaySound0-1"
+		"OnPass" "sspl_cartbeepPlaySound0.5-1"
+		"OnPass" "sspl_flashinglightStop0-1"
+		"OnPass" "sspl_pushzoneCaptureCurrentCP0-1"
+		"OnPass" "cp_fourSetOwner30.11"
+	}
+	"origin" "-160 -288 376"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect the end of your fourth track section here."
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "12802"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_A_9"
+	"targetname" "sspl_path_A_8"
+	"origin" "1972 -1160 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "3844"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_D_7"
+	"targetname" "sspl_path_D_4"
+	"origin" "-1136 -1056 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "3836"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_D_4"
+	"targetname" "sspl_path_D_3"
+	"origin" "-1408 -1088 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "5552"
+	"classname" "func_instance"
+	"angles" "-0 -45 0"
+	"file" "instances/building_ext_blu_first.vmf"
+	"fixup_style" "2"
+	"origin" "928 -952 376"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
 	"id" "21158"
 	"classname" "prop_static"
 	"angles" "0 270 0"
@@ -19079,867 +19941,6 @@ entity
 		"visgroupautoshown" "1"
 		"comments" "Connect this to the begining of your third track section, or clone it to make more track."
 		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "5552"
-	"classname" "func_instance"
-	"angles" "-0 -45 0"
-	"file" "instances/building_ext_blu_first.vmf"
-	"fixup_style" "2"
-	"origin" "928 -952 376"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3500]"
-	}
-}
-entity
-{
-	"id" "3836"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_D_4"
-	"targetname" "sspl_path_D_3"
-	"origin" "-1408 -1088 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "3844"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_D_7"
-	"targetname" "sspl_path_D_4"
-	"origin" "-1136 -1056 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "12802"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_A_9"
-	"targetname" "sspl_path_A_8"
-	"origin" "1972 -1160 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "923"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"targetname" "sspl_path_end"
-	connections
-	{
-		"OnPass" "sspl_constraintBreak0.1-1"
-		"OnPass" "sspl_trainKill0.1-1"
-		"OnPass" "sspl_carttipPlaySound0-1"
-		"OnPass" "sspl_cartbeepPlaySound0.5-1"
-		"OnPass" "sspl_flashinglightStop0-1"
-		"OnPass" "sspl_pushzoneCaptureCurrentCP0-1"
-		"OnPass" "cp_fourSetOwner30.11"
-	}
-	"origin" "-160 -288 376"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect the end of your fourth track section here."
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "6941"
-	"classname" "func_instance"
-	"angles" "-0 0 0"
-	"file" "instances/last_rocks.vmf"
-	"fixup_style" "0"
-	"origin" "-1824 -1648 608"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "40"
-	"classname" "func_instance"
-	"angles" "-0 0 0"
-	"file" "pl_butte_building.vmf"
-	"fixup_style" "2"
-	"origin" "0 0 256"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 2000]"
-	}
-}
-entity
-{
-	"id" "11620"
-	"classname" "prop_static"
-	"angles" "0 90 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_straight_256.mdl"
-	"skin" "0"
-	"solid" "0"
-	"origin" "800 -1760 260"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "11950"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_A_10"
-	"targetname" "sspl_path_A_5"
-	"origin" "1012 -1780 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "14459"
-	"classname" "prop_static"
-	"angles" "0 270 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_s_curve_96.mdl"
-	"skin" "0"
-	"solid" "0"
-	"origin" "1055 -1808 260"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "14540"
-	"classname" "prop_static"
-	"angles" "0 270 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_straight_64.mdl"
-	"solid" "0"
-	"origin" "1215 -1856.04 260"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "14552"
-	"classname" "prop_static"
-	"angles" "0 275.5 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_straight_64.mdl"
-	"solid" "0"
-	"origin" "1277 -1853 260"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "14574"
-	"classname" "prop_static"
-	"angles" "0 30 0"
-	"disableselfshadowing" "0"
-	"disablevertexlighting" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_arc_22_5degree_512.mdl"
-	"screenspacefade" "0"
-	"solid" "0"
-	"origin" "1394 -1824 260"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "14584"
-	"classname" "prop_static"
-	"angles" "0 53.5 0"
-	"disableselfshadowing" "0"
-	"disablevertexlighting" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_arc_22_5degree_512.mdl"
-	"screenspacefade" "0"
-	"solid" "0"
-	"origin" "1551 -1733 260"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "14596"
-	"classname" "prop_static"
-	"angles" "0 323 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_straight_256.mdl"
-	"skin" "0"
-	"solid" "0"
-	"origin" "1697 -1565 260.337"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "14620"
-	"classname" "prop_static"
-	"angles" "0 323 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_straight_256.mdl"
-	"skin" "0"
-	"solid" "0"
-	"origin" "1850 -1362 260.337"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "14632"
-	"classname" "prop_static"
-	"angles" "0 90 0"
-	"disableselfshadowing" "0"
-	"disablevertexlighting" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_arc_45degree_128.mdl"
-	"screenspacefade" "0"
-	"solid" "0"
-	"origin" "1971 -1205 259.193"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "14646"
-	"classname" "prop_static"
-	"angles" "0 230.5 0"
-	"disableselfshadowing" "0"
-	"disablevertexlighting" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_straight_32.mdl"
-	"screenspacefade" "0"
-	"solid" "0"
-	"origin" "1935.13 -1249.79 259.582"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "14675"
-	"classname" "prop_static"
-	"angles" "0 0 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"lightmapresolutionx" "32"
-	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_straight_256.mdl"
-	"skin" "0"
-	"solid" "0"
-	"origin" "1971 -1046 259.252"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "14704"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_A_11"
-	"targetname" "sspl_path_A_10"
-	"origin" "1108 -1840 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "14766"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_A_12"
-	"targetname" "sspl_path_A_11"
-	"origin" "1144 -1852 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "14770"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_A_6"
-	"targetname" "sspl_path_A_12"
-	"origin" "1180 -1856 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "14774"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_A_14"
-	"targetname" "sspl_path_A_13"
-	"origin" "1380 -1836 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "14778"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_A_15"
-	"targetname" "sspl_path_A_14"
-	"origin" "1440 -1812 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "14782"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_A_16"
-	"targetname" "sspl_path_A_15"
-	"origin" "1528 -1760 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "18617"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "64"
-	"target" "sspl_path_B_7"
-	"targetname" "sspl_path_B_5"
-	"origin" "2112 1152 80"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your second track section, or clone it to make more track."
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "18638"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "32"
-	"target" "sspl_path_cp_two1"
-	"targetname" "sspl_path_B_6"
-	"origin" "864 2144 384"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your second track section, or clone it to make more track."
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "14786"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_A_7"
-	"targetname" "sspl_path_A_16"
-	"origin" "1600 -1692 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your first track section, or clone it to make more track."
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "932"
-	"classname" "filter_activator_name"
-	"filtername" "sspl_cart"
-	"Negated" "0"
-	"targetname" "sspl_filter_cart"
-	"origin" "528 -1376 400"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "This is used so only the cart prop will activate the final capture and explosion."
-		"logicalpos" "[0 3000]"
-	}
-}
-entity
-{
-	"id" "2775"
-	"classname" "func_instance"
-	"angles" "-0 0 0"
-	"file" "instances/sniper-platform-1"
-	"origin" "1477 -517 256"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 9000]"
-	}
-}
-entity
-{
-	"id" "841"
-	"classname" "team_train_watcher"
-	"env_spark_name" "sspl_cartsparks"
-	"goal_node" "sspl_path_end"
-	"handle_train_movement" "1"
-	"hud_min_speed_level_1" "1"
-	"hud_min_speed_level_2" "60"
-	"hud_min_speed_level_3" "80"
-	"linked_cp_1" "cp_one"
-	"linked_cp_2" "cp_two"
-	"linked_cp_3" "cp_three"
-	"linked_cp_4" "cp_four"
-	"linked_pathtrack_1" "sspl_path_cp_one3"
-	"linked_pathtrack_2" "sspl_path_cp_two3"
-	"linked_pathtrack_3" "sspl_path_cp_three3"
-	"linked_pathtrack_4" "sspl_path_end"
-	"speed_forward_modifier" "1"
-	"start_node" "sspl_path_start"
-	"targetname" "sspl_watcher"
-	"train" "sspl_train"
-	"train_can_recede" "1"
-	"origin" "480 -1376 368"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 7500]"
-	}
-}
-entity
-{
-	"id" "839"
-	"classname" "game_round_win"
-	"force_map_reset" "1"
-	"switch_teams" "1"
-	"targetname" "sspl_time_end"
-	"TeamNum" "2"
-	"origin" "480 -1376 336"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "837"
-	"classname" "team_round_timer"
-	"auto_countdown" "1"
-	"max_length" "600"
-	"setup_length" "70"
-	"show_in_hud" "1"
-	"show_time_remaining" "1"
-	"start_paused" "0"
-	"targetname" "sspl_timer"
-	"timer_length" "270"
-	connections
-	{
-		"OnFinished" "sspl_time_endRoundWin0-1"
-		"OnSetupFinished" "blu_first_spawn_door_trigger*Enable0-1"
-	}
-	"origin" "480 -1376 352"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Timer length and increases upon point capture are starting places. Adjust them to your map accordingly."
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "6627"
-	"classname" "func_instance"
-	"angles" "-0 0 0"
-	"file" "instances/red_arch"
-	"fixup_style" "2"
-	"origin" "-1248 192 256"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "2619"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_C_4"
-	"targetname" "sspl_path_C_2"
-	"origin" "-928 2144 384"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your third track section, or clone it to make more track."
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "833"
-	"classname" "logic_auto"
-	"spawnflags" "1"
-	connections
-	{
-		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamGoalString#Goldrush_blue_final_goal0-1"
-		"OnMultiNewRound" "sspl_gamerulesSetRedTeamGoalString#Goldrush_red_final_goal0-1"
-		"OnMultiNewRound" "sspl_gamerulesSetRedTeamRole10-1"
-		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamRole20-1"
-		"OnMultiNewRound" "sspl_gamerulesSetBlueTeamRespawnWaveTime30-1"
-		"OnMultiNewRound" "sspl_gamerulesSetRedTeamRespawnWaveTime90-1"
-	}
-	"origin" "512 -1376 400"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "You only need one logic_auto. If you already have one copy it's outputs here."
-		"logicalpos" "[0 -11768]"
-	}
-}
-entity
-{
-	"id" "2612"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_D_6"
-	"targetname" "sspl_path_D_2"
-	"origin" "-2048 -768 304"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "19362"
-	"classname" "func_instance"
-	"angles" "-0 0 0"
-	"file" "instances/blu_spawn_3"
-	"fixup_style" "2"
-	"origin" "192 800 96"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 8500]"
-	}
-}
-entity
-{
-	"id" "19881"
-	"classname" "logic_relay"
-	"spawnflags" "0"
-	"StartDisabled" "0"
-	"targetname" "relay_a_spawn_to_blu"
-	connections
-	{
-		"OnTrigger" "blu_spawn_2_door*Enable0-1"
-		"OnTrigger" "blue_spawn_2Enable0-1"
-		"OnSpawn" "blu_spawn_2_door*Disable0-1"
-		"OnSpawn" "blue_spawn_2Disable0-1"
-		"OnTrigger" "blu_spawn_primaryDisable01"
-		"OnTrigger" "blu_spawnDisable01"
-		"OnTrigger" "blu_spawn_secondaryEnable0-1"
-	}
-	"origin" "704 -1376 375.988"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "19866"
-	"classname" "logic_relay"
-	"spawnflags" "0"
-	"StartDisabled" "0"
-	"targetname" "relay_enable_red_to_upper_spawn"
-	connections
-	{
-		"OnTrigger" "final_spawn_redEnable0-1"
-		"OnTrigger" "red_spawnEnable0-1"
-	}
-	"origin" "672 -1376 375.988"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "21636"
-	"classname" "path_track"
-	"angles" "0 0 0"
-	"orientationtype" "1"
-	"spawnflags" "0"
-	"target" "sspl_path_B_3"
-	"targetname" "sspl_path_B_7"
-	"origin" "2112 1200 80"
-	editor
-	{
-		"color" "255 192 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"comments" "Connect this to the begining of your second track section, or clone it to make more track."
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "21666"
-	"classname" "info_overlay"
-	"angles" "0 270 0"
-	"BasisNormal" "0.337073 0 0.941479"
-	"BasisOrigin" "2152 828.207 131.926"
-	"BasisU" "0 -1 0"
-	"BasisV" "0.941478 0 -0.337073"
-	"EndU" "10"
-	"EndV" "0"
-	"fademindist" "-1"
-	"material" "signs/hazard_yellow001"
-	"sides" "1503"
-	"StartU" "0"
-	"StartV" "1"
-	"uv0" "-323.447 31.5014 0"
-	"uv1" "-323.736 46.5994 0"
-	"uv2" "323.979 -31.5646 0"
-	"uv3" "323.204 -46.5362 0"
-	"origin" "2152 828.207 131.926"
-	editor
-	{
-		"color" "80 150 225"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
 	}
 }
 cameras
