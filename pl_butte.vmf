@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "188"
+	"mapversion" "190"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "188"
+	"mapversion" "190"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -16438,7 +16438,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_D_6"
 	"targetname" "sspl_path_D_2"
-	"origin" "-2048 -768 304"
+	"origin" "-2176 -1024 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -17422,7 +17422,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_D_2"
 	"targetname" "sspl_path_D_1"
-	"origin" "-2048 -128 304"
+	"origin" "-2048 -832 304"
 	editor
 	{
 		"color" "216 229 0"
@@ -17442,7 +17442,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_D_1"
 	"targetname" "sspl_path_cp_three5"
-	"origin" "-2048 -80 304"
+	"origin" "-2048 -784 304"
 	editor
 	{
 		"color" "216 229 0"
@@ -17460,7 +17460,7 @@ entity
 	"orientationtype" "1"
 	"target" "sspl_path_cp_three5"
 	"targetname" "sspl_path_cp_three4"
-	"origin" "-2048 -59 308"
+	"origin" "-2048 -763 308"
 	editor
 	{
 		"color" "216 229 0"
@@ -17501,7 +17501,7 @@ entity
 		"OnCapTeam2" "arch_entryDisable0-1"
 		"OnCapTeam2" "arch_entry_blockEnable0-1"
 	}
-	"origin" "-2048 0 264"
+	"origin" "-2048 -704 264"
 	editor
 	{
 		"color" "216 229 0"
@@ -17519,7 +17519,7 @@ entity
 	"orientationtype" "1"
 	"target" "sspl_path_cp_three3"
 	"targetname" "sspl_path_cp_three2"
-	"origin" "-2048 59 308"
+	"origin" "-2048 -645 308"
 	editor
 	{
 		"color" "216 229 0"
@@ -17538,7 +17538,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_cp_three2"
 	"targetname" "sspl_path_cp_three1"
-	"origin" "-2048 80 304"
+	"origin" "-2048 -624 304"
 	editor
 	{
 		"color" "216 229 0"
@@ -17566,7 +17566,7 @@ entity
 	"skin" "0"
 	"solid" "0"
 	"targetname" "cp_three_prop"
-	"origin" "-2048 0 256"
+	"origin" "-2048 -704 256"
 	editor
 	{
 		"color" "216 229 0"
@@ -17595,7 +17595,7 @@ entity
 		"OnPass" "sspl_capturebellPlaySound01"
 		"OnPass" "cp_threeSetOwner30.11"
 	}
-	"origin" "-2048 0 308"
+	"origin" "-2048 -704 308"
 	editor
 	{
 		"color" "216 229 0"
@@ -18408,9 +18408,9 @@ entity
 	"angles" "0 0 0"
 	"orientationtype" "1"
 	"spawnflags" "0"
-	"target" "sspl_path_D_4"
+	"target" "sspl_path_D_14"
 	"targetname" "sspl_path_D_3"
-	"origin" "-1408 -1088 304"
+	"origin" "-2000 -1472 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -18429,7 +18429,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_D_7"
 	"targetname" "sspl_path_D_4"
-	"origin" "-1136 -1056 304"
+	"origin" "-1072 -1104 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -18493,7 +18493,7 @@ entity
 	"angles" "-0 0 0"
 	"file" "instances/last_rocks.vmf"
 	"fixup_style" "0"
-	"origin" "-1824 -1648 608"
+	"origin" "-1824 -1856 608"
 	editor
 	{
 		"color" "220 30 220"
@@ -19838,7 +19838,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_D_3"
 	"targetname" "sspl_path_D_6"
-	"origin" "-1792 -1024 304"
+	"origin" "-2192 -1296 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -20359,9 +20359,9 @@ entity
 	"angles" "0 0 0"
 	"orientationtype" "1"
 	"spawnflags" "0"
-	"target" "sspl_path_C_5"
+	"target" "sspl_path_C_6"
 	"targetname" "sspl_path_C_3"
-	"origin" "-1792 1408 304"
+	"origin" "-1376 2064 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -20759,6 +20759,82 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "27710"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_D_15"
+	"targetname" "sspl_path_D_14"
+	"origin" "-1600 -1520 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "27715"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_D_4"
+	"targetname" "sspl_path_D_15"
+	"origin" "-1168 -1312 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "27734"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_C_7"
+	"targetname" "sspl_path_C_6"
+	"origin" "-1744 1824 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your third track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "27739"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"spawnflags" "0"
+	"target" "sspl_path_C_5"
+	"targetname" "sspl_path_C_7"
+	"origin" "-2000 1440 304"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Connect this to the begining of your third track section, or clone it to make more track."
+		"logicalpos" "[0 1500]"
 	}
 }
 cameras
