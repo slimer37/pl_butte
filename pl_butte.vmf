@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "195"
+	"mapversion" "196"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "195"
+	"mapversion" "196"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -17377,7 +17377,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_B_13"
 	"targetname" "sspl_path_B_1"
-	"origin" "2152 24 304"
+	"origin" "2124 24 304"
 	editor
 	{
 		"color" "138 191 0"
@@ -17397,7 +17397,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_B_1"
 	"targetname" "sspl_path_cp_one5"
-	"origin" "2104 24 304"
+	"origin" "2076 24 304"
 	editor
 	{
 		"color" "138 191 0"
@@ -17415,7 +17415,7 @@ entity
 	"orientationtype" "1"
 	"target" "sspl_path_cp_one5"
 	"targetname" "sspl_path_cp_one4"
-	"origin" "2083 24 308"
+	"origin" "2055 24 308"
 	editor
 	{
 		"color" "138 191 0"
@@ -17453,7 +17453,7 @@ entity
 		"OnCapTeam2" "red_exit_a_blockEnable0-1"
 		"OnCapTeam2" "warehouse_entryTrigger0.011"
 	}
-	"origin" "2024 24 264"
+	"origin" "1996 24 264"
 	editor
 	{
 		"color" "138 191 0"
@@ -17471,7 +17471,7 @@ entity
 	"orientationtype" "1"
 	"target" "sspl_path_cp_one3"
 	"targetname" "sspl_path_cp_one2"
-	"origin" "1965 24 308"
+	"origin" "1937 24 308"
 	editor
 	{
 		"color" "138 191 0"
@@ -17490,7 +17490,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_cp_one2"
 	"targetname" "sspl_path_cp_one1"
-	"origin" "1944 24 304"
+	"origin" "1916 24 304"
 	editor
 	{
 		"color" "138 191 0"
@@ -17520,7 +17520,7 @@ entity
 		"OnPass" "sspl_capturebellPlaySound01"
 		"OnPass" "cp_oneSetOwner30.11"
 	}
-	"origin" "2024 24 308"
+	"origin" "1996 24 308"
 	editor
 	{
 		"color" "138 191 0"
@@ -17547,7 +17547,7 @@ entity
 	"skin" "0"
 	"solid" "0"
 	"targetname" "cp_one_prop"
-	"origin" "2024 24 256"
+	"origin" "1996 24 256"
 	editor
 	{
 		"color" "138 191 0"
@@ -20115,7 +20115,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_cp_one1"
 	"targetname" "sspl_path_A_3"
-	"origin" "1792 0 304"
+	"origin" "1792 8 304"
 	editor
 	{
 		"color" "255 192 0"
