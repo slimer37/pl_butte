@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "5"
+	"mapversion" "6"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "4"
+	"nGridSpacing" "16"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "5"
+	"mapversion" "6"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites_2fort"
 	"detailvbsp" "detail_2fort.vbsp"
@@ -1781,6 +1781,71 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "160"
+	"classname" "item_ammopack_medium"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"fademindist" "-1"
+	"StartDisabled" "0"
+	"TeamNum" "0"
+	"origin" "-144 112 -280"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "173"
+	"classname" "item_healthkit_small"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"fademindist" "-1"
+	"StartDisabled" "0"
+	"TeamNum" "0"
+	"origin" "-96 112 -280"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "183"
+	"classname" "info_overlay"
+	"angles" "0 270 0"
+	"BasisNormal" "0 0 1"
+	"BasisOrigin" "-128 112 -288"
+	"BasisU" "0 -1 0"
+	"BasisV" "1 0 0"
+	"EndU" "1"
+	"EndV" "0"
+	"fademindist" "-1"
+	"material" "overlays/patch001"
+	"sides" "78"
+	"StartU" "0"
+	"StartV" "1"
+	"uv0" "-48 -56 0"
+	"uv1" "-48 56 0"
+	"uv2" "48 56 0"
+	"uv3" "48 -56 0"
+	"origin" "-128 112 -288"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
 	}
 }
 cameras
