@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "209"
+	"mapversion" "210"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "4"
+	"nGridSpacing" "32"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "209"
+	"mapversion" "210"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -20781,7 +20781,7 @@ entity
 	"TextureScale" "1"
 	"Type" "0"
 	"Width" "2"
-	"origin" "2420 2081.07 336.42"
+	"origin" "2632 2281.07 336.42"
 	editor
 	{
 		"color" "220 30 220"
@@ -20830,7 +20830,7 @@ entity
 	"model" "models/props_island/island_large_electrical_box.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "2448 2096 311.33"
+	"origin" "2660 2296 311.33"
 	editor
 	{
 		"color" "255 255 0"
@@ -20908,7 +20908,7 @@ entity
 	"TextureScale" "1"
 	"Type" "0"
 	"Width" "2"
-	"origin" "2420 2089.07 328.42"
+	"origin" "2632 2289.07 328.42"
 	editor
 	{
 		"color" "220 30 220"
@@ -22027,7 +22027,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_B_9"
 	"targetname" "sspl_path_B_8"
-	"origin" "2288 1504 80"
+	"origin" "2288 1536 80"
 	editor
 	{
 		"color" "255 192 0"
@@ -22046,7 +22046,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_B_10"
 	"targetname" "sspl_path_B_9"
-	"origin" "2096 1808 80"
+	"origin" "2096 1840 80"
 	editor
 	{
 		"color" "255 192 0"
@@ -22065,7 +22065,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_B_11"
 	"targetname" "sspl_path_B_10"
-	"origin" "1904 2016 80"
+	"origin" "1968 2016 80"
 	editor
 	{
 		"color" "255 192 0"
@@ -22682,7 +22682,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_B_8"
 	"targetname" "sspl_path_B_7"
-	"origin" "2368 1328 80"
+	"origin" "2368 1360 80"
 	editor
 	{
 		"color" "255 192 0"
@@ -23005,7 +23005,7 @@ entity
 	"angles" "-0 -60 0"
 	"file" "instances/blu_spawn_2"
 	"fixup_style" "2"
-	"origin" "2176 2368 16"
+	"origin" "2376 2560 16"
 	editor
 	{
 		"color" "220 30 220"
