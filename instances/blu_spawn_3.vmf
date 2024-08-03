@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "21"
+	"mapversion" "22"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "21"
+	"mapversion" "22"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites_2fort"
 	"detailvbsp" "detail_2fort.vbsp"
@@ -4857,7 +4857,139 @@ entity
 }
 entity
 {
-	"id" "1790"
+	"id" "2437"
+	"classname" "func_areaportal"
+	"PortalVersion" "1"
+	"StartOpen" "1"
+	solid
+	{
+		"id" "2435"
+		side
+		{
+			"id" "575"
+			"plane" "(-64 256 64) (128 256 64) (128 224 64)"
+			vertices_plus
+			{
+				"v" "-64 256 64"
+				"v" "128 256 64"
+				"v" "128 224 64"
+				"v" "-64 224 64"
+			}
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "574"
+			"plane" "(-64 224 -64) (128 224 -64) (128 256 -64)"
+			vertices_plus
+			{
+				"v" "-64 224 -64"
+				"v" "128 224 -64"
+				"v" "128 256 -64"
+				"v" "-64 256 -64"
+			}
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "573"
+			"plane" "(-64 256 64) (-64 224 64) (-64 224 -64)"
+			vertices_plus
+			{
+				"v" "-64 256 64"
+				"v" "-64 224 64"
+				"v" "-64 224 -64"
+				"v" "-64 256 -64"
+			}
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "572"
+			"plane" "(128 256 -64) (128 224 -64) (128 224 64)"
+			vertices_plus
+			{
+				"v" "128 256 -64"
+				"v" "128 224 -64"
+				"v" "128 224 64"
+				"v" "128 256 64"
+			}
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "571"
+			"plane" "(128 256 64) (-64 256 64) (-64 256 -64)"
+			vertices_plus
+			{
+				"v" "128 256 64"
+				"v" "-64 256 64"
+				"v" "-64 256 -64"
+				"v" "128 256 -64"
+			}
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "570"
+			"plane" "(128 224 -64) (-64 224 -64) (-64 224 64)"
+			vertices_plus
+			{
+				"v" "128 224 -64"
+				"v" "-64 224 -64"
+				"v" "-64 224 64"
+				"v" "128 224 64"
+			}
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 255 255"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "0 255 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "1739"
 	"classname" "light"
 	"_constant_attn" "0"
 	"_distance" "0"
@@ -4871,7 +5003,7 @@ entity
 	"_zero_percent_distance" "0"
 	"spawnflags" "0"
 	"style" "0"
-	"origin" "832 -64 512"
+	"origin" "576 -64 384"
 	editor
 	{
 		"color" "220 30 220"
@@ -4882,9 +5014,25 @@ entity
 }
 entity
 {
-	"id" "2365"
+	"id" "1844"
+	"classname" "filter_activator_tfteam"
+	"Negated" "0"
+	"targetname" "underground_spawn_filter"
+	"TeamNum" "2"
+	"origin" "112 -176 40"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1378"
 	"classname" "prop_static"
-	"angles" "0 270 0"
+	"angles" "0 90 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
@@ -4892,13 +5040,38 @@ entity
 	"model" "models/props_medieval/medieval_stairs001a.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "596 -212 -149.904"
+	"origin" "684 123.915 64.0956"
 	editor
 	{
 		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "1707"
+	"classname" "light"
+	"_constant_attn" "0"
+	"_distance" "0"
+	"_fifty_percent_distance" "0"
+	"_hardfalloff" "0"
+	"_light" "255 255 255 200"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_linear_attn" "0"
+	"_quadratic_attn" "1"
+	"_zero_percent_distance" "0"
+	"spawnflags" "0"
+	"style" "0"
+	"origin" "384 -64 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -10268]"
 	}
 }
 entity
@@ -5047,34 +5220,9 @@ entity
 }
 entity
 {
-	"id" "1707"
-	"classname" "light"
-	"_constant_attn" "0"
-	"_distance" "0"
-	"_fifty_percent_distance" "0"
-	"_hardfalloff" "0"
-	"_light" "255 255 255 200"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
-	"_linear_attn" "0"
-	"_quadratic_attn" "1"
-	"_zero_percent_distance" "0"
-	"spawnflags" "0"
-	"style" "0"
-	"origin" "384 -64 64"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -10268]"
-	}
-}
-entity
-{
-	"id" "1378"
+	"id" "2365"
 	"classname" "prop_static"
-	"angles" "0 90 0"
+	"angles" "0 270 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
@@ -5082,7 +5230,7 @@ entity
 	"model" "models/props_medieval/medieval_stairs001a.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "684 123.915 64.0956"
+	"origin" "596 -212 -149.904"
 	editor
 	{
 		"color" "255 255 0"
@@ -5093,23 +5241,7 @@ entity
 }
 entity
 {
-	"id" "1844"
-	"classname" "filter_activator_tfteam"
-	"Negated" "0"
-	"targetname" "underground_spawn_filter"
-	"TeamNum" "2"
-	"origin" "112 -176 40"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "1739"
+	"id" "1790"
 	"classname" "light"
 	"_constant_attn" "0"
 	"_distance" "0"
@@ -5123,146 +5255,13 @@ entity
 	"_zero_percent_distance" "0"
 	"spawnflags" "0"
 	"style" "0"
-	"origin" "576 -64 384"
+	"origin" "832 -64 512"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 -10268]"
-	}
-}
-entity
-{
-	"id" "2437"
-	"classname" "func_areaportal"
-	"PortalVersion" "1"
-	"StartOpen" "0"
-	"target" "door_red_large_win_1"
-	solid
-	{
-		"id" "2435"
-		side
-		{
-			"id" "575"
-			"plane" "(-64 256 64) (128 256 64) (128 224 64)"
-			vertices_plus
-			{
-				"v" "-64 256 64"
-				"v" "128 256 64"
-				"v" "128 224 64"
-				"v" "-64 224 64"
-			}
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "574"
-			"plane" "(-64 224 -64) (128 224 -64) (128 256 -64)"
-			vertices_plus
-			{
-				"v" "-64 224 -64"
-				"v" "128 224 -64"
-				"v" "128 256 -64"
-				"v" "-64 256 -64"
-			}
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "573"
-			"plane" "(-64 256 64) (-64 224 64) (-64 224 -64)"
-			vertices_plus
-			{
-				"v" "-64 256 64"
-				"v" "-64 224 64"
-				"v" "-64 224 -64"
-				"v" "-64 256 -64"
-			}
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "572"
-			"plane" "(128 256 -64) (128 224 -64) (128 224 64)"
-			vertices_plus
-			{
-				"v" "128 256 -64"
-				"v" "128 224 -64"
-				"v" "128 224 64"
-				"v" "128 256 64"
-			}
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "571"
-			"plane" "(128 256 64) (-64 256 64) (-64 256 -64)"
-			vertices_plus
-			{
-				"v" "128 256 64"
-				"v" "-64 256 64"
-				"v" "-64 256 -64"
-				"v" "128 256 -64"
-			}
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "570"
-			"plane" "(128 224 -64) (-64 224 -64) (-64 224 64)"
-			vertices_plus
-			{
-				"v" "128 224 -64"
-				"v" "-64 224 -64"
-				"v" "-64 224 64"
-				"v" "128 224 64"
-			}
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 255 255"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	editor
-	{
-		"color" "0 255 255"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
 	}
 }
 cameras
