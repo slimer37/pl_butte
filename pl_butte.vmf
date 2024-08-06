@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "235"
+	"mapversion" "237"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "235"
+	"mapversion" "237"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -24075,7 +24075,7 @@ entity
 	"id" "6941"
 	"classname" "func_instance"
 	"angles" "-0 0 0"
-	"file" "instances/last_rocks.vmf"
+	"file" "instances/last_office.vmf"
 	"fixup_style" "0"
 	"origin" "-400 -3200 608"
 	editor
