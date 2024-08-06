@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "232"
+	"mapversion" "233"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "256"
+	"nGridSpacing" "32"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "232"
+	"mapversion" "233"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -24132,7 +24132,7 @@ entity
 	"angles" "-0 -45 0"
 	"file" "instances/building_ext_blu_first.vmf"
 	"fixup_style" "2"
-	"origin" "928 -952 376"
+	"origin" "1056 -1080 376"
 	editor
 	{
 		"color" "220 30 220"
@@ -24701,7 +24701,7 @@ entity
 	"model" "models/props_vehicles/train_enginecar.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "1302 -1136 258.218"
+	"origin" "1174 -1808 258.218"
 	editor
 	{
 		"color" "255 255 0"
