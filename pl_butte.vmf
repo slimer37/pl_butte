@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "238"
+	"mapversion" "239"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "16"
+	"nGridSpacing" "8"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "238"
+	"mapversion" "239"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -21203,6 +21203,124 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	solid
+	{
+		"id" "45002"
+		side
+		{
+			"id" "2466"
+			"plane" "(-1248 -512 1152) (-1216 -512 1152) (-1216 -1248 1152)"
+			vertices_plus
+			{
+				"v" "-1248 -512 1152"
+				"v" "-1216 -512 1152"
+				"v" "-1216 -1248 1152"
+				"v" "-1248 -1248 1152"
+			}
+			"material" "DEV/DEV_MEASUREWALL01D"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2465"
+			"plane" "(-1248 -1248 256) (-1216 -1248 256) (-1216 -512 256)"
+			vertices_plus
+			{
+				"v" "-1248 -1248 256"
+				"v" "-1216 -1248 256"
+				"v" "-1216 -512 256"
+				"v" "-1248 -512 256"
+			}
+			"material" "DEV/DEV_MEASUREWALL01D"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2464"
+			"plane" "(-1248 -512 1152) (-1248 -1248 1152) (-1248 -1248 256)"
+			vertices_plus
+			{
+				"v" "-1248 -512 1152"
+				"v" "-1248 -1248 1152"
+				"v" "-1248 -1248 256"
+				"v" "-1248 -512 256"
+			}
+			"material" "DEV/DEV_MEASUREWALL01D"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2463"
+			"plane" "(-1216 -512 256) (-1216 -1248 256) (-1216 -1248 1152)"
+			vertices_plus
+			{
+				"v" "-1216 -512 256"
+				"v" "-1216 -1248 256"
+				"v" "-1216 -1248 1152"
+				"v" "-1216 -512 1152"
+			}
+			"material" "DEV/DEV_MEASUREWALL01D"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2462"
+			"plane" "(-1216 -512 1152) (-1248 -512 1152) (-1248 -512 256)"
+			vertices_plus
+			{
+				"v" "-1216 -512 1152"
+				"v" "-1248 -512 1152"
+				"v" "-1248 -512 256"
+				"v" "-1216 -512 256"
+			}
+			"material" "DEV/DEV_MEASUREWALL01D"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2461"
+			"plane" "(-1216 -1248 256) (-1248 -1248 256) (-1248 -1248 1152)"
+			vertices_plus
+			{
+				"v" "-1216 -1248 256"
+				"v" "-1248 -1248 256"
+				"v" "-1248 -1248 1152"
+				"v" "-1216 -1248 1152"
+			}
+			"material" "DEV/DEV_MEASUREWALL01D"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 224 193"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 	group
 	{
 		"id" "31757"
@@ -21352,7 +21470,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_D_15"
 	"targetname" "sspl_path_D_16"
-	"origin" "-1248 -2336 304"
+	"origin" "-1040 -2336 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -23502,7 +23620,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_D_16"
 	"targetname" "sspl_path_D_14"
-	"origin" "-1600 -2512 304"
+	"origin" "-1392 -2512 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -23912,7 +24030,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_D_18"
 	"targetname" "sspl_path_D_15"
-	"origin" "-1088 -2144 304"
+	"origin" "-880 -2144 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -25806,7 +25924,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_D_14"
 	"targetname" "sspl_path_D_3"
-	"origin" "-2064 -2400 304"
+	"origin" "-1952 -2512 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -26405,7 +26523,7 @@ entity
 	"spawnflags" "0"
 	"target" "sspl_path_D_3"
 	"targetname" "sspl_path_D_6"
-	"origin" "-2352 -2064 304"
+	"origin" "-2288 -2256 304"
 	editor
 	{
 		"color" "255 192 0"
@@ -26676,6 +26794,21 @@ entity
 		"visgroupautoshown" "1"
 		"comments" "Connect this to the begining of your fourth track section, or clone it to make more track."
 		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "45212"
+	"classname" "func_instance"
+	"angles" "-0 0 0"
+	"file" "instances/trenchbuilding"
+	"origin" "-1632 -1312 640"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
 	}
 }
 cameras
