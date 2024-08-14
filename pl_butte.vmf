@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8867"
-	"mapversion" "243"
+	"mapversion" "244"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,7 +14,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "32"
+	"nGridSpacing" "1"
 }
 palette_plus
 {
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "243"
+	"mapversion" "244"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -21538,7 +21538,7 @@ entity
 {
 	"id" "29030"
 	"classname" "prop_static"
-	"angles" "0 180 0"
+	"angles" "0 105 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
@@ -21546,7 +21546,7 @@ entity
 	"model" "models/props_mining/track_straight_256.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "1152 -1856 260"
+	"origin" "2295.94 -1054.24 260"
 	editor
 	{
 		"color" "255 255 0"
@@ -21559,7 +21559,7 @@ entity
 {
 	"id" "29086"
 	"classname" "prop_static"
-	"angles" "0 156 0"
+	"angles" "0 89.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
@@ -21567,7 +21567,7 @@ entity
 	"model" "models/props_mining/track_straight_256.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "1078 -2220 258.013"
+	"origin" "1925 -1095 258.013"
 	editor
 	{
 		"color" "255 255 0"
@@ -23687,7 +23687,7 @@ entity
 {
 	"id" "29021"
 	"classname" "prop_static"
-	"angles" "0 260.5 0"
+	"angles" "0 185.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
@@ -23695,7 +23695,7 @@ entity
 	"model" "models/props_vehicles/train_enginecar.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "1174 -1808 258.218"
+	"origin" "2347.99 -1063.07 258.218"
 	editor
 	{
 		"color" "255 255 0"
@@ -23734,23 +23734,26 @@ entity
 }
 entity
 {
-	"id" "29251"
+	"id" "29751"
 	"classname" "prop_static"
-	"angles" "0 176 0"
+	"angles" "0 263 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"ignorenormals" "0"
 	"lightmapresolutionx" "32"
 	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_straight_256.mdl"
-	"skin" "0"
+	"model" "models/props_mining/track_straight_32.mdl"
+	"screenspacefade" "0"
 	"solid" "0"
-	"origin" "1354 -792 260.013"
+	"origin" "1872 -2060 260.311"
 	editor
 	{
 		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
+		"logicalpos" "[0 0]"
 	}
 }
 entity
@@ -23931,14 +23934,14 @@ entity
 {
 	"id" "29105"
 	"classname" "prop_static"
-	"angles" "0 352 0"
+	"angles" "0 277 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
 	"lightmapresolutiony" "32"
 	"model" "models/props_mining/track_straight_64.mdl"
 	"solid" "0"
-	"origin" "1148 -2012 257.811"
+	"origin" "2144.22 -1090.75 257.811"
 	editor
 	{
 		"color" "255 255 0"
@@ -25022,17 +25025,17 @@ entity
 }
 entity
 {
-	"id" "29239"
+	"id" "29719"
 	"classname" "prop_static"
-	"angles" "0 169.5 0"
+	"angles" "0 328.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
 	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_straight_256.mdl"
+	"model" "models/props_mining/track_straight_64.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "1322 -1042 260.013"
+	"origin" "1782 -2296 259.252"
 	editor
 	{
 		"color" "255 255 0"
@@ -25045,7 +25048,7 @@ entity
 {
 	"id" "29177"
 	"classname" "prop_static"
-	"angles" "0 0 0"
+	"angles" "0 285 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
@@ -25053,7 +25056,7 @@ entity
 	"model" "models/props_mining/track_s_curve_96.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "1200 -1604 260"
+	"origin" "2551.77 -1035.38 260"
 	editor
 	{
 		"color" "255 255 0"
@@ -25066,14 +25069,14 @@ entity
 {
 	"id" "29164"
 	"classname" "prop_static"
-	"angles" "0 356.5 0"
+	"angles" "0 281.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
 	"lightmapresolutiony" "32"
 	"model" "models/props_mining/track_straight_64.mdl"
 	"solid" "0"
-	"origin" "1250 -1446 259.811"
+	"origin" "2717.33 -1042.79 259.811"
 	editor
 	{
 		"color" "255 255 0"
@@ -25084,17 +25087,16 @@ entity
 }
 entity
 {
-	"id" "29149"
+	"id" "48405"
 	"classname" "prop_static"
-	"angles" "0 169.5 0"
+	"angles" "0 86.5 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
 	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_straight_256.mdl"
-	"skin" "0"
+	"model" "models/props_mining/track_straight_64.mdl"
 	"solid" "0"
-	"origin" "1276 -1290 260.013"
+	"origin" "1767 -1092 260.07"
 	editor
 	{
 		"color" "255 255 0"
@@ -25107,14 +25109,14 @@ entity
 {
 	"id" "29123"
 	"classname" "prop_static"
-	"angles" "0 347 0"
+	"angles" "0 272 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
 	"lightmapresolutiony" "32"
 	"model" "models/props_mining/track_straight_64.mdl"
 	"solid" "0"
-	"origin" "1136 -2074 257.811"
+	"origin" "2081.22 -1095.21 257.811"
 	editor
 	{
 		"color" "255 255 0"
@@ -26647,9 +26649,9 @@ entity
 }
 entity
 {
-	"id" "29751"
+	"id" "48292"
 	"classname" "prop_static"
-	"angles" "0 263 0"
+	"angles" "0 291 0"
 	"disableselfshadowing" "0"
 	"disablevertexlighting" "0"
 	"fademindist" "-1"
@@ -26657,10 +26659,10 @@ entity
 	"ignorenormals" "0"
 	"lightmapresolutionx" "32"
 	"lightmapresolutiony" "32"
-	"model" "models/props_mining/track_straight_32.mdl"
+	"model" "models/props_mining/track_arc_22_5degree_512.mdl"
 	"screenspacefade" "0"
 	"solid" "0"
-	"origin" "1872 -2060 260.311"
+	"origin" "1374 -754 261.092"
 	editor
 	{
 		"color" "255 255 0"
@@ -26671,17 +26673,100 @@ entity
 }
 entity
 {
-	"id" "29719"
+	"id" "48325"
 	"classname" "prop_static"
-	"angles" "0 328.5 0"
+	"angles" "0 321 0"
+	"disableselfshadowing" "0"
+	"disablevertexlighting" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_arc_22_5degree_512.mdl"
+	"screenspacefade" "0"
+	"solid" "0"
+	"origin" "1448 -920 260.092"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "48395"
+	"classname" "prop_static"
+	"angles" "0 56 0"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"lightmapresolutionx" "32"
 	"lightmapresolutiony" "32"
 	"model" "models/props_mining/track_straight_64.mdl"
-	"skin" "0"
 	"solid" "0"
-	"origin" "1782 -2296 259.252"
+	"origin" "1537 -1009 260.07"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "48496"
+	"classname" "prop_static"
+	"angles" "0 76.5 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_64.mdl"
+	"solid" "0"
+	"origin" "1706 -1083 260.07"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "48476"
+	"classname" "prop_static"
+	"angles" "0 64 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_64.mdl"
+	"solid" "0"
+	"origin" "1590.06 -1039.94 260.07"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "48490"
+	"classname" "prop_static"
+	"angles" "0 69 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_mining/track_straight_64.mdl"
+	"solid" "0"
+	"origin" "1647 -1065 260.07"
 	editor
 	{
 		"color" "255 255 0"
